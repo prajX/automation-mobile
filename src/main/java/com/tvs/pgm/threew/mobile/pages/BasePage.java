@@ -12,7 +12,7 @@ public class BasePage {
 
     public BasePage() {
         driver = DriverManager.getDriver();
-        wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(10));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(20));
     }
 
 }

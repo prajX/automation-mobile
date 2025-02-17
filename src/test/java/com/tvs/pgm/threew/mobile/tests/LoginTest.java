@@ -15,18 +15,19 @@ public class LoginTest extends BaseTest {
     }
 
     
-    @Test
+    @Test(priority =1)
     public void testTextField() {
         Assert.assertTrue(loginPage.isEnterMobileNumberDisplayed(), "Enter Mobile Number text is NOT present on the screen!");
     }
 
-    @Test
+    @Test(priority = 2)
     public void enterMob(){
         loginPage.enterMobileNumber("1122334455");
     }
 
-    @Test
+    @Test(priority = 3)
     public void clickVerifyNumberButton(){
         System.out.println(loginPage.isverifyNumberButtonClickable());
+        loginPage.clickVerifyNumber();
     }
 }
