@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.tvs.pgm.threew.mobile.tests.LoginTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.453 s -- in com.tvs.pgm.threew.mobile.tests.LoginTest

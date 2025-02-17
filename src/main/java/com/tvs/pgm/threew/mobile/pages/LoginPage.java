@@ -16,26 +16,43 @@ public class LoginPage extends BasePage {
     @FindBy(xpath="//android.widget.Button[@content-desc=\"Verify Number\"]")
     private WebElement verifyNumberButton;
 
+    @FindBy(xpath="//android.widget.ImageView[@content-desc=\"English\"]")
+    private WebElement laungageDropdown;
+
     public LoginPage() {
         
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
     
     public boolean isEnterMobileNumberDisplayed() {
+       // wait.until(ExpectedConditions.elementToBeClickable(enterMobileNumberText));
         return enterMobileNumberText.isDisplayed();
+        
     }
 
     public void enterMobileNumber(String mobileNumber){
+       // wait.until(ExpectedConditions.elementToBeClickable(enterMobileNumberField));
         enterMobileNumberField.click();
         enterMobileNumberField.sendKeys(mobileNumber);
     }
 
     public boolean isverifyNumberButtonClickable(){
+        wait.until(ExpectedConditions.elementToBeClickable(verifyNumberButton));
         return verifyNumberButton.isEnabled();
     }
 
     public void clickVerifyNumber(){
-        wait.until(ExpectedConditions.elementToBeClickable(verifyNumberButton));
+      //  wait.until(ExpectedConditions.elementToBeClickable(verifyNumberButton));
         verifyNumberButton.click();
     }
+
+    // public String verifyPlaceHoldervalue(){
+    //     String plcaeholderName=enterMobileNumberField.getAttribute("value");
+    //     return plcaeholderName;
+    // }
+
+    // public String verifyLaungaugeText(){
+    //     String text=laungageDropdown.getText();
+    //     return text;
+    // }
 }

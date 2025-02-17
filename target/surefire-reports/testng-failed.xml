@@ -10,6 +10,13 @@
           <include name="setup"/>
         </methods>
       </class> <!-- com.tvs.pgm.threew.mobile.tests.LoginTest -->
+      <class name="com.tvs.pgm.threew.mobile.tests.OTPTest">
+        <methods>
+          <include name="VerifyOTPSubmitSuccess"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.tvs.pgm.threew.mobile.tests.OTPTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->
