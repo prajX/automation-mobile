@@ -3,18 +3,9 @@ package com.tvs.pgm.threew.mobile.pages;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-
-import java.time.Duration;
-import java.util.HashMap;
-import java.util.Map;
-
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
-
-import io.appium.java_client.TouchAction;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
-import io.appium.java_client.touch.WaitOptions;
-import io.appium.java_client.touch.offset.PointOption;
 
 public class HomePage extends BasePage {
 

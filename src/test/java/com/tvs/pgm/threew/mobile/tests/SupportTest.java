@@ -3,8 +3,6 @@ package com.tvs.pgm.threew.mobile.tests;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
-import com.tvs.pgm.threew.mobile.pages.HomePage;
 import com.tvs.pgm.threew.mobile.pages.SupportPage;
 
 public class SupportTest extends BaseTest {
@@ -24,11 +22,8 @@ public class SupportTest extends BaseTest {
     @Test(priority = 18)
     public void verifyErrorMesage_Without_TitleAndDescritpion() throws InterruptedException{
         supportPage.clickOnQueryButton();
-        supportPage.clickOnCategories();
-        supportPage.selectCategoryValue_Support();
         Assert.assertEquals(supportPage.getErrorMessage_Title(), "Please enter required field");
-        //Assert.assertEquals(supportPage.getErrorMessage_Category(), "Please select category");
-        Assert.assertEquals(supportPage.getErrorMessage_Descritpion(), "Please add description");
+        Assert.assertEquals(supportPage.getErrorMessage_Description(), "Please add description");
     }
 
     @Test(priority = 19, enabled = false)
@@ -37,15 +32,16 @@ public class SupportTest extends BaseTest {
         supportPage.enterTitle("Need a help regarding support");
         supportPage.clickOnQueryButton();
         Assert.assertEquals(supportPage.getErrorMessage_Category(), "Please select category");
-        Assert.assertEquals(supportPage.getErrorMessage_Descritpion(), "Please add description");
+        Assert.assertEquals(supportPage.getErrorMessage_Description(), "Please add description");
     }
 
     @Test(priority = 20)
     public void verifyQueryCreatedSuccessfully() throws InterruptedException{
         supportPage.clickOnTitle();
-        //supportPage.enterTitle("Having a issue");
+        supportPage.enterTitle("Having a issue");
         supportPage.clickOnCategories();
         supportPage.selectCategoryValue_Support();
+        supportPage.clickOnDescription();
         supportPage.enterDescription("This description added related to Support, so can you please provide suggestion?");
         supportPage.clickOnQueryButton();
     }
