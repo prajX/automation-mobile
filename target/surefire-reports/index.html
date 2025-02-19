@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">19 methods, 2 failed,   17 passed</span>
+                    <span class="method-stats">20 methods, 2 failed,   18 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Surefire_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.tvs.pgm.threew.mobile.tests.SupportTest" class="method navigator-link" hash-for-method="verifyErrorMesage_Without_TitleAndDescritpion">verifyErrorMesage_Without_TitleAndDescritpion</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tvs.pgm.threew.mobile.tests.SupportTest" class="method navigator-link" hash-for-method="verifyErrorMessage_without_Category_Description">verifyErrorMessage_without_Category_Description</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -167,6 +167,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tvs.pgm.threew.mobile.tests.SupportTest" class="method navigator-link" hash-for-method="verifyErrorMesage_Without_TitleAndDescritpion">verifyErrorMesage_Without_TitleAndDescritpion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="com.tvs.pgm.threew.mobile.tests.P_HomeTest" class="method navigator-link" hash-for-method="verifyFindDealerTileVisible">verifyFindDealerTileVisible</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -225,30 +230,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyErrorMesage_Without_TitleAndDescritpion">
-                  </a> <!-- verifyErrorMesage_Without_TitleAndDescritpion -->
-                  <span class="method-name">verifyErrorMesage_Without_TitleAndDescritpion</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Please add description] but found []
-	at com.tvs.pgm.threew.mobile.tests.SupportTest.verifyErrorMesage_Without_TitleAndDescritpion(SupportTest.java:31)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyQueryCreatedSuccessfully">
-                  </a> <!-- verifyQueryCreatedSuccessfully -->
-                  <span class="method-name">verifyQueryCreatedSuccessfully</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: //android.widget.FrameLayout[@resource-id=&quot;android:id/content&quot;]/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.EditText[1]
+                  <a name="verifyErrorMessage_without_Category_Description">
+                  </a> <!-- verifyErrorMessage_without_Category_Description -->
+                  <span class="method-name">verifyErrorMessage_without_Category_Description</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
 	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
 	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:64)
 	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:77)
-	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$7ZSpPIqP.clear(Unknown Source)
-	at com.tvs.pgm.threew.mobile.pages.SupportPage.clickOnTitle(SupportPage.java:64)
-	at com.tvs.pgm.threew.mobile.tests.SupportTest.verifyQueryCreatedSuccessfully(SupportTest.java:45)
+	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$b16GPoZv.click(Unknown Source)
+	at com.tvs.pgm.threew.mobile.pages.SupportPage.clickOnTitle(SupportPage.java:60)
+	at com.tvs.pgm.threew.mobile.tests.SupportTest.verifyErrorMessage_without_Category_Description(SupportTest.java:35)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@76973a6 (tried for 1 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@433ea2ac (tried for 1 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:261)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
 	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
@@ -259,9 +252,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [897d939f-774a-460c-85c0-f94afaf6b520, findElement {using=xpath, value=//android.widget.FrameLayout[@resource-id=&quot;android:id/content&quot;]/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.EditText[1]}]
+Command: [45cff238-f053-4dfa-8284-1162dcbd4673, findElement {using=xpath, value=//android.widget.ScrollView/android.widget.EditText[1]}]
 Capabilities {appium:appActivity: com.tvs_pgm.tvs.MainActivity, appium:appPackage: com.tvs.tvs_pgm_dev, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.tvs_pgm.tvs.MainActivity, appPackage: com.tvs.tvs_pgm_dev, automationName: UIAutomator2, deviceName: 9cc57a85, dontStopAppOnReset: true, noReset: true, platformName: ANDROID}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: ONEPLUS A6010, appium:deviceName: 9cc57a85, appium:deviceScreenDensity: 450, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: 9cc57a85, appium:dontStopAppOnReset: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.8125, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:viewportRect: {height: 2045, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 897d939f-774a-460c-85c0-f94afaf6b520
+Session ID: 45cff238-f053-4dfa-8284-1162dcbd4673
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -284,6 +277,61 @@ Session ID: 897d939f-774a-460c-85c0-f94afaf6b520
 	... 38 more
 ... Removed 33 stack frames
 </div> <!-- stack-trace -->
+                  <em>
+(Verify that the system is giving an error message if user is trying to create query without category and Description)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyQueryCreatedSuccessfully">
+                  </a> <!-- verifyQueryCreatedSuccessfully -->
+                  <span class="method-name">verifyQueryCreatedSuccessfully</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: //android.widget.ScrollView/android.widget.EditText[1]
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:64)
+	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:77)
+	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$b16GPoZv.click(Unknown Source)
+	at com.tvs.pgm.threew.mobile.pages.SupportPage.clickOnTitle(SupportPage.java:60)
+	at com.tvs.pgm.threew.mobile.tests.SupportTest.verifyQueryCreatedSuccessfully(SupportTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@14c99bf6 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:261)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
+	... 36 more
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [45cff238-f053-4dfa-8284-1162dcbd4673, findElement {using=xpath, value=//android.widget.ScrollView/android.widget.EditText[1]}]
+Capabilities {appium:appActivity: com.tvs_pgm.tvs.MainActivity, appium:appPackage: com.tvs.tvs_pgm_dev, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.tvs_pgm.tvs.MainActivity, appPackage: com.tvs.tvs_pgm_dev, automationName: UIAutomator2, deviceName: 9cc57a85, dontStopAppOnReset: true, noReset: true, platformName: ANDROID}, appium:deviceApiLevel: 30, appium:deviceManufacturer: OnePlus, appium:deviceModel: ONEPLUS A6010, appium:deviceName: 9cc57a85, appium:deviceScreenDensity: 450, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: 9cc57a85, appium:dontStopAppOnReset: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.8125, appium:platformVersion: 11, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:viewportRect: {height: 2045, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 45cff238-f053-4dfa-8284-1162dcbd4673
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	... 38 more
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify that the Query Generated successfully)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -299,6 +347,8 @@ Session ID: 897d939f-774a-460c-85c0-f94afaf6b520
                   <a name="VerifyOTPSubmitSuccess">
                   </a> <!-- VerifyOTPSubmitSuccess -->
                   <span class="method-name">VerifyOTPSubmitSuccess</span>
+                  <em>
+(Verify that the user can click on the submit button And successfully land on the HomePage)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -306,6 +356,8 @@ Session ID: 897d939f-774a-460c-85c0-f94afaf6b520
                   <a name="VerifyWithlessThanFiveDigit">
                   </a> <!-- VerifyWithlessThanFiveDigit -->
                   <span class="method-name">VerifyWithlessThanFiveDigit</span>
+                  <em>
+(Verify that the system can not move forward with less than 5 digit OTP)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -313,6 +365,8 @@ Session ID: 897d939f-774a-460c-85c0-f94afaf6b520
                   <a name="verifyOTPEnteredSuccess">
                   </a> <!-- verifyOTPEnteredSuccess -->
                   <span class="method-name">verifyOTPEnteredSuccess</span>
+                  <em>
+(Verify that the user is able to move forward with correct OTP)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -328,6 +382,8 @@ Session ID: 897d939f-774a-460c-85c0-f94afaf6b520
                   <a name="verifyCreateQueryButtonClicksON_SupportListingScreen">
                   </a> <!-- verifyCreateQueryButtonClicksON_SupportListingScreen -->
                   <span class="method-name">verifyCreateQueryButtonClicksON_SupportListingScreen</span>
+                  <em>
+(Verify that the User can click on the Create query button in the Query listing screen)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -343,6 +399,8 @@ Session ID: 897d939f-774a-460c-85c0-f94afaf6b520
                   <a name="profileIconePresent">
                   </a> <!-- profileIconePresent -->
                   <span class="method-name">profileIconePresent</span>
+                  <em>
+(Verify that the profile Icon is present on the Homepage)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -350,6 +408,8 @@ Session ID: 897d939f-774a-460c-85c0-f94afaf6b520
                   <a name="settingIconpresent">
                   </a> <!-- settingIconpresent -->
                   <span class="method-name">settingIconpresent</span>
+                  <em>
+(Verify that the setting Icon is present on the Homepage)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -357,6 +417,8 @@ Session ID: 897d939f-774a-460c-85c0-f94afaf6b520
                   <a name="verifyFindDealerTileVisible">
                   </a> <!-- verifyFindDealerTileVisible -->
                   <span class="method-name">verifyFindDealerTileVisible</span>
+                  <em>
+(Verify that the Find a Dealer tile is present on the screen)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -364,6 +426,8 @@ Session ID: 897d939f-774a-460c-85c0-f94afaf6b520
                   <a name="verifyHelpButtonClickable">
                   </a> <!-- verifyHelpButtonClickable -->
                   <span class="method-name">verifyHelpButtonClickable</span>
+                  <em>
+(Verify that the user can click on the Need Help tile is present on the screen)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -371,6 +435,8 @@ Session ID: 897d939f-774a-460c-85c0-f94afaf6b520
                   <a name="verifyNeedAnyHelpTileVisible">
                   </a> <!-- verifyNeedAnyHelpTileVisible -->
                   <span class="method-name">verifyNeedAnyHelpTileVisible</span>
+                  <em>
+(Verify that the Need Any Help tile is present on the screen)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -378,6 +444,8 @@ Session ID: 897d939f-774a-460c-85c0-f94afaf6b520
                   <a name="verifyReferralTileVisible">
                   </a> <!-- verifyReferralTileVisible -->
                   <span class="method-name">verifyReferralTileVisible</span>
+                  <em>
+(Verify that the Referral tile is present on the screen)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -385,6 +453,8 @@ Session ID: 897d939f-774a-460c-85c0-f94afaf6b520
                   <a name="verifyTrainingTileVisible">
                   </a> <!-- verifyTrainingTileVisible -->
                   <span class="method-name">verifyTrainingTileVisible</span>
+                  <em>
+(Verify that the Traingin and Troubleshooting tile is present on the screen)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -392,6 +462,8 @@ Session ID: 897d939f-774a-460c-85c0-f94afaf6b520
                   <a name="verifyVehicleServicesTileVisible">
                   </a> <!-- verifyVehicleServicesTileVisible -->
                   <span class="method-name">verifyVehicleServicesTileVisible</span>
+                  <em>
+(Verify that the Vehicle_Services tile is present on the screen)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -407,6 +479,17 @@ Session ID: 897d939f-774a-460c-85c0-f94afaf6b520
                   <a name="verifyBackArrowVisibleOnSupportScreeen">
                   </a> <!-- verifyBackArrowVisibleOnSupportScreeen -->
                   <span class="method-name">verifyBackArrowVisibleOnSupportScreeen</span>
+                  <em>
+(Verify that the Back arrow is present on the  Support screen)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyErrorMesage_Without_TitleAndDescritpion">
+                  </a> <!-- verifyErrorMesage_Without_TitleAndDescritpion -->
+                  <span class="method-name">verifyErrorMesage_Without_TitleAndDescritpion</span>
+                  <em>
+(Verify that the system is giving an error message if user is trying to create query without Title and Description)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -422,6 +505,8 @@ Session ID: 897d939f-774a-460c-85c0-f94afaf6b520
                   <a name="clickVerifyNumberButton">
                   </a> <!-- clickVerifyNumberButton -->
                   <span class="method-name">clickVerifyNumberButton</span>
+                  <em>
+(Verify that the user is able to land on the OTP Screen)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -429,6 +514,8 @@ Session ID: 897d939f-774a-460c-85c0-f94afaf6b520
                   <a name="enterMob">
                   </a> <!-- enterMob -->
                   <span class="method-name">enterMob</span>
+                  <em>
+(Verify that the user can enter 10 digit mobile number in the Mobile Number field)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -436,6 +523,8 @@ Session ID: 897d939f-774a-460c-85c0-f94afaf6b520
                   <a name="testTextField">
                   </a> <!-- testTextField -->
                   <span class="method-name">testTextField</span>
+                  <em>
+(Verify that user can see Enter Mobile Number Text on the Login screen)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -443,6 +532,8 @@ Session ID: 897d939f-774a-460c-85c0-f94afaf6b520
                   <a name="wrongMobileNumber">
                   </a> <!-- wrongMobileNumber -->
                   <span class="method-name">wrongMobileNumber</span>
+                  <em>
+(Verify that the system not able to move forward with less than 10 digit)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -503,88 +594,92 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(19);
+data.addRows(20);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'VerifyWithlessThanFiveDigit')
 data.setCell(0, 2, 'com.tvs.pgm.threew.mobile.tests.OTPTest')
-data.setCell(0, 3, 7023);
+data.setCell(0, 3, 6094);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyErrorMesage_Without_TitleAndDescritpion')
 data.setCell(1, 2, 'com.tvs.pgm.threew.mobile.tests.SupportTest')
-data.setCell(1, 3, 5149);
+data.setCell(1, 3, 4458);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyOTPEnteredSuccess')
+data.setCell(2, 1, 'VerifyOTPSubmitSuccess')
 data.setCell(2, 2, 'com.tvs.pgm.threew.mobile.tests.OTPTest')
-data.setCell(2, 3, 3278);
+data.setCell(2, 3, 3240);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyHelpButtonClickable')
-data.setCell(3, 2, 'com.tvs.pgm.threew.mobile.tests.P_HomeTest')
-data.setCell(3, 3, 2313);
+data.setCell(3, 1, 'verifyOTPEnteredSuccess')
+data.setCell(3, 2, 'com.tvs.pgm.threew.mobile.tests.OTPTest')
+data.setCell(3, 3, 2337);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'enterMob')
-data.setCell(4, 2, 'com.tvs.pgm.threew.mobile.tests.LoginTest')
-data.setCell(4, 3, 2073);
+data.setCell(4, 1, 'verifyHelpButtonClickable')
+data.setCell(4, 2, 'com.tvs.pgm.threew.mobile.tests.P_HomeTest')
+data.setCell(4, 3, 2230);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'wrongMobileNumber')
-data.setCell(5, 2, 'com.tvs.pgm.threew.mobile.tests.LoginTest')
-data.setCell(5, 3, 2068);
+data.setCell(5, 1, 'settingIconpresent')
+data.setCell(5, 2, 'com.tvs.pgm.threew.mobile.tests.P_HomeTest')
+data.setCell(5, 3, 1931);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifyNeedAnyHelpTileVisible')
-data.setCell(6, 2, 'com.tvs.pgm.threew.mobile.tests.P_HomeTest')
-data.setCell(6, 3, 2026);
+data.setCell(6, 1, 'wrongMobileNumber')
+data.setCell(6, 2, 'com.tvs.pgm.threew.mobile.tests.LoginTest')
+data.setCell(6, 3, 1878);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verifyQueryCreatedSuccessfully')
-data.setCell(7, 2, 'com.tvs.pgm.threew.mobile.tests.SupportTest')
-data.setCell(7, 3, 1445);
+data.setCell(7, 1, 'enterMob')
+data.setCell(7, 2, 'com.tvs.pgm.threew.mobile.tests.LoginTest')
+data.setCell(7, 3, 1411);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifyCreateQueryButtonClicksON_SupportListingScreen')
-data.setCell(8, 2, 'com.tvs.pgm.threew.mobile.tests.Q_SupportListingTest')
-data.setCell(8, 3, 1374);
+data.setCell(8, 1, 'verifyErrorMessage_without_Category_Description')
+data.setCell(8, 2, 'com.tvs.pgm.threew.mobile.tests.SupportTest')
+data.setCell(8, 3, 1380);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'clickVerifyNumberButton')
-data.setCell(9, 2, 'com.tvs.pgm.threew.mobile.tests.LoginTest')
-data.setCell(9, 3, 1178);
+data.setCell(9, 1, 'verifyQueryCreatedSuccessfully')
+data.setCell(9, 2, 'com.tvs.pgm.threew.mobile.tests.SupportTest')
+data.setCell(9, 3, 1354);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'verifyTrainingTileVisible')
-data.setCell(10, 2, 'com.tvs.pgm.threew.mobile.tests.P_HomeTest')
-data.setCell(10, 3, 1011);
+data.setCell(10, 1, 'clickVerifyNumberButton')
+data.setCell(10, 2, 'com.tvs.pgm.threew.mobile.tests.LoginTest')
+data.setCell(10, 3, 838);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'VerifyOTPSubmitSuccess')
-data.setCell(11, 2, 'com.tvs.pgm.threew.mobile.tests.OTPTest')
-data.setCell(11, 3, 749);
+data.setCell(11, 1, 'testTextField')
+data.setCell(11, 2, 'com.tvs.pgm.threew.mobile.tests.LoginTest')
+data.setCell(11, 3, 743);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'settingIconpresent')
+data.setCell(12, 1, 'verifyTrainingTileVisible')
 data.setCell(12, 2, 'com.tvs.pgm.threew.mobile.tests.P_HomeTest')
-data.setCell(12, 3, 736);
+data.setCell(12, 3, 636);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'verifyReferralTileVisible')
-data.setCell(13, 2, 'com.tvs.pgm.threew.mobile.tests.P_HomeTest')
-data.setCell(13, 3, 709);
+data.setCell(13, 1, 'verifyBackArrowVisibleOnSupportScreeen')
+data.setCell(13, 2, 'com.tvs.pgm.threew.mobile.tests.SupportTest')
+data.setCell(13, 3, 429);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'testTextField')
-data.setCell(14, 2, 'com.tvs.pgm.threew.mobile.tests.LoginTest')
-data.setCell(14, 3, 605);
+data.setCell(14, 1, 'verifyFindDealerTileVisible')
+data.setCell(14, 2, 'com.tvs.pgm.threew.mobile.tests.P_HomeTest')
+data.setCell(14, 3, 356);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'profileIconePresent')
 data.setCell(15, 2, 'com.tvs.pgm.threew.mobile.tests.P_HomeTest')
-data.setCell(15, 3, 391);
+data.setCell(15, 3, 329);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'verifyVehicleServicesTileVisible')
+data.setCell(16, 1, 'verifyReferralTileVisible')
 data.setCell(16, 2, 'com.tvs.pgm.threew.mobile.tests.P_HomeTest')
-data.setCell(16, 3, 311);
+data.setCell(16, 3, 305);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'verifyFindDealerTileVisible')
+data.setCell(17, 1, 'verifyNeedAnyHelpTileVisible')
 data.setCell(17, 2, 'com.tvs.pgm.threew.mobile.tests.P_HomeTest')
-data.setCell(17, 3, 220);
+data.setCell(17, 3, 276);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'verifyBackArrowVisibleOnSupportScreeen')
-data.setCell(18, 2, 'com.tvs.pgm.threew.mobile.tests.SupportTest')
-data.setCell(18, 3, 159);
+data.setCell(18, 1, 'verifyVehicleServicesTileVisible')
+data.setCell(18, 2, 'com.tvs.pgm.threew.mobile.tests.P_HomeTest')
+data.setCell(18, 3, 252);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'verifyCreateQueryButtonClicksON_SupportListingScreen')
+data.setCell(19, 2, 'com.tvs.pgm.threew.mobile.tests.Q_SupportListingTest')
+data.setCell(19, 3, 187);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 32 seconds</span>
+              <span class="suite-total-time">Total running time: 30 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -599,7 +694,7 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">5 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -620,8 +715,6 @@ return data;
               <span class="ignored-class-name">com.tvs.pgm.threew.mobile.tests.SupportTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">tearDown</span>
-                <br/>
-                <span class="ignored-method-name">verifyErrorMessage_without_Category_Description</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -650,266 +743,278 @@ return data;
               <div class="chronological-class-name">com.tvs.pgm.threew.mobile.tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">12090 ms</span>
+                <span class="method-start">13054 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.LoginTest.testTextField())</span>
-                <span class="method-start">13183 ms</span>
+                <span class="method-start">14230 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTextField</span>
-                <span class="method-start">13197 ms</span>
+                <span class="method-start">14242 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=testTextField status=SUCCESS method=LoginTest.testTextField()[pri:1, instance:com.t...)</span>
-                <span class="method-start">13809 ms</span>
+                <span class="method-start">14987 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">wrongMobileNumber</span>
-                <span class="method-start">14401 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.LoginTest.wrongMobileNumber())</span>
-                <span class="method-start">14401 ms</span>
+                <span class="method-start">15597 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">wrongMobileNumber</span>
+                <span class="method-start">15598 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=wrongMobileNumber status=SUCCESS method=LoginTest.wrongMobileNumber()[pri:2, instan...)</span>
-                <span class="method-start">16470 ms</span>
+                <span class="method-start">17477 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.LoginTest.enterMob())</span>
-                <span class="method-start">17061 ms</span>
+                <span class="method-start">18044 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">enterMob</span>
-                <span class="method-start">17062 ms</span>
+                <span class="method-start">18045 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=enterMob status=SUCCESS method=LoginTest.enterMob()[pri:3, instance:com.tvs.pgm.thr...)</span>
-                <span class="method-start">19136 ms</span>
+                <span class="method-start">19457 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.LoginTest.clickVerifyNumberButton())</span>
-                <span class="method-start">19799 ms</span>
+                <span class="method-start">20075 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">clickVerifyNumberButton</span>
-                <span class="method-start">19800 ms</span>
+                <span class="method-start">20076 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=clickVerifyNumberButton status=SUCCESS method=LoginTest.clickVerifyNumberButton()[p...)</span>
-                <span class="method-start">20980 ms</span>
+                <span class="method-start">20914 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.tvs.pgm.threew.mobile.tests.OTPTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">21605 ms</span>
+                <span class="method-start">21558 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">VerifyWithlessThanFiveDigit</span>
-                <span class="method-start">22417 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.OTPTest.VerifyWithlessThanFiveDigit())</span>
-                <span class="method-start">22417 ms</span>
+                <span class="method-start">21972 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyWithlessThanFiveDigit</span>
+                <span class="method-start">21973 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=VerifyWithlessThanFiveDigit status=SUCCESS method=OTPTest.VerifyWithlessThanFiveDig...)</span>
-                <span class="method-start">29441 ms</span>
+                <span class="method-start">28068 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.OTPTest.verifyOTPEnteredSuccess())</span>
-                <span class="method-start">30040 ms</span>
+                <span class="method-start">28646 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyOTPEnteredSuccess</span>
-                <span class="method-start">30041 ms</span>
+                <span class="method-start">28649 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=verifyOTPEnteredSuccess status=SUCCESS method=OTPTest.verifyOTPEnteredSuccess()[pri...)</span>
-                <span class="method-start">33320 ms</span>
+                <span class="method-start">30988 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.OTPTest.VerifyOTPSubmitSuccess())</span>
-                <span class="method-start">33853 ms</span>
+                <span class="method-start">31534 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VerifyOTPSubmitSuccess</span>
-                <span class="method-start">33854 ms</span>
+                <span class="method-start">31535 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=VerifyOTPSubmitSuccess status=SUCCESS method=OTPTest.VerifyOTPSubmitSuccess()[pri:7...)</span>
-                <span class="method-start">34604 ms</span>
+                <span class="method-start">34776 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.tvs.pgm.threew.mobile.tests.P_HomeTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">35373 ms</span>
+                <span class="method-start">35359 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.P_HomeTest.settingIconpresent())</span>
-                <span class="method-start">36591 ms</span>
+                <span class="method-start">35761 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">settingIconpresent</span>
-                <span class="method-start">36592 ms</span>
+                <span class="method-start">35761 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=settingIconpresent status=SUCCESS method=P_HomeTest.settingIconpresent()[pri:8, ins...)</span>
-                <span class="method-start">37329 ms</span>
+                <span class="method-start">37693 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.P_HomeTest.profileIconePresent())</span>
-                <span class="method-start">37984 ms</span>
+                <span class="method-start">38366 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">profileIconePresent</span>
-                <span class="method-start">37985 ms</span>
+                <span class="method-start">38366 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=profileIconePresent status=SUCCESS method=P_HomeTest.profileIconePresent()[pri:9, i...)</span>
-                <span class="method-start">38377 ms</span>
+                <span class="method-start">38695 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.P_HomeTest.verifyNeedAnyHelpTileVisible())</span>
-                <span class="method-start">39038 ms</span>
+                <span class="method-start">39359 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyNeedAnyHelpTileVisible</span>
-                <span class="method-start">39039 ms</span>
+                <span class="method-start">39360 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=verifyNeedAnyHelpTileVisible status=SUCCESS method=P_HomeTest.verifyNeedAnyHelpTile...)</span>
-                <span class="method-start">41066 ms</span>
+                <span class="method-start">39638 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.P_HomeTest.verifyFindDealerTileVisible())</span>
-                <span class="method-start">41784 ms</span>
+                <span class="method-start">40329 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyFindDealerTileVisible</span>
-                <span class="method-start">41786 ms</span>
+                <span class="method-start">40330 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=verifyFindDealerTileVisible status=SUCCESS method=P_HomeTest.verifyFindDealerTileVi...)</span>
-                <span class="method-start">42006 ms</span>
+                <span class="method-start">40687 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.P_HomeTest.verifyVehicleServicesTileVisible())</span>
-                <span class="method-start">42739 ms</span>
+                <span class="method-start">41372 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyVehicleServicesTileVisible</span>
-                <span class="method-start">42740 ms</span>
+                <span class="method-start">41373 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=verifyVehicleServicesTileVisible status=SUCCESS method=P_HomeTest.verifyVehicleServ...)</span>
-                <span class="method-start">43052 ms</span>
+                <span class="method-start">41626 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.P_HomeTest.verifyTrainingTileVisible())</span>
-                <span class="method-start">43843 ms</span>
+                <span class="method-start">42291 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyTrainingTileVisible</span>
-                <span class="method-start">43845 ms</span>
+                <span class="method-start">42292 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=verifyTrainingTileVisible status=SUCCESS method=P_HomeTest.verifyTrainingTileVisibl...)</span>
-                <span class="method-start">44856 ms</span>
+                <span class="method-start">42928 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.P_HomeTest.verifyReferralTileVisible())</span>
-                <span class="method-start">45553 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyReferralTileVisible</span>
-                <span class="method-start">45554 ms</span>
+                <span class="method-start">43562 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.P_HomeTest.verifyReferralTileVisible())</span>
+                <span class="method-start">43562 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=verifyReferralTileVisible status=SUCCESS method=P_HomeTest.verifyReferralTileVisibl...)</span>
-                <span class="method-start">46263 ms</span>
+                <span class="method-start">43868 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.P_HomeTest.verifyHelpButtonClickable() throws java.lang....)</span>
-                <span class="method-start">47039 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyHelpButtonClickable</span>
-                <span class="method-start">47039 ms</span>
+                <span class="method-start">44521 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.P_HomeTest.verifyHelpButtonClickable() throws java.lang....)</span>
+                <span class="method-start">44521 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=verifyHelpButtonClickable status=SUCCESS method=P_HomeTest.verifyHelpButtonClickabl...)</span>
-                <span class="method-start">49353 ms</span>
+                <span class="method-start">46752 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.tvs.pgm.threew.mobile.tests.Q_SupportListingTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">49956 ms</span>
+                <span class="method-start">47333 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifyCreateQueryButtonClicksON_SupportListingScreen</span>
-                <span class="method-start">50253 ms</span>
+                <span class="method-start">47501 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.tvs.pgm.threew.mobile.tests.SupportTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">51628 ms</span>
+                <span class="method-start">47689 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">verifyBackArrowVisibleOnSupportScreeen</span>
-                <span class="method-start">52563 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.SupportTest.verifyBackArrowVisibleOnSupportScreeen())</span>
-                <span class="method-start">52563 ms</span>
+                <span class="method-start">48379 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyBackArrowVisibleOnSupportScreeen</span>
+                <span class="method-start">48380 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=verifyBackArrowVisibleOnSupportScreeen status=SUCCESS method=SupportTest.verifyBack...)</span>
-                <span class="method-start">52723 ms</span>
+                <span class="method-start">48810 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.SupportTest.verifyErrorMesage_Without_TitleAndDescritpio...)</span>
-                <span class="method-start">53250 ms</span>
+                <span class="method-start">49365 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyErrorMesage_Without_TitleAndDescritpion</span>
+                <span class="method-start">49366 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=verifyErrorMesage_Without_TitleAndDescritpion status=SUCCESS method=SupportTest.ver...)</span>
+                <span class="method-start">53825 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.SupportTest.verifyErrorMessage_without_Category_Descript...)</span>
+                <span class="method-start">54421 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">verifyErrorMesage_Without_TitleAndDescritpion</span>
-                <span class="method-start">53252 ms</span>
+                <span class="method-name">verifyErrorMessage_without_Category_Description</span>
+                <span class="method-start">54424 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">captureResult([TestResult name=verifyErrorMesage_Without_TitleAndDescritpion status=FAILURE method=SupportTest.ver...)</span>
-                <span class="method-start">58410 ms</span>
+                <span class="method-name">captureResult([TestResult name=verifyErrorMessage_without_Category_Description status=FAILURE method=SupportTest.v...)</span>
+                <span class="method-start">55817 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.SupportTest.verifyQueryCreatedSuccessfully() throws java...)</span>
-                <span class="method-start">58965 ms</span>
+                <span class="method-start">56326 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyQueryCreatedSuccessfully</span>
-                <span class="method-start">58967 ms</span>
+                <span class="method-start">56326 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=verifyQueryCreatedSuccessfully status=FAILURE method=SupportTest.verifyQueryCreated...)</span>
-                <span class="method-start">60415 ms</span>
+                <span class="method-start">57682 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.tvs.pgm.threew.mobile.tests.BaseTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">61268 ms</span>
+                <span class="method-start">58343 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

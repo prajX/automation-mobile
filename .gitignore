@@ -1,3 +1,4 @@
 "target/" 
 ".idea/" 
 "*.log" 
+"src/test/resources/screenshots/"

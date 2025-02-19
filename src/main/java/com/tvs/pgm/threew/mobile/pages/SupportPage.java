@@ -9,13 +9,13 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 public class SupportPage extends BasePage{
 
-    @FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.EditText[1]")
+    @FindBy(xpath = "//android.widget.ScrollView/android.widget.EditText[1]")
     private WebElement titleTextbox;
 
     @FindBy(xpath = "//android.widget.ImageView[@content-desc=\"Select Category\"]")
     private WebElement categoryDropdown;
 
-    @FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.EditText[2]")
+    @FindBy(xpath = "//android.widget.ScrollView/android.widget.EditText[2]")
     private WebElement descriptionTextbox;
 
     @FindBy(xpath = "//android.widget.ImageView[@content-desc=\"Add Attachment\"]")
@@ -48,9 +48,6 @@ public class SupportPage extends BasePage{
     @FindBy(xpath = "//android.view.View[@content-desc=\"Please select category\"]")
     private WebElement errorForSelectCategory;
 
-    // @FindBy(how=MobileBy.AccessibilityId,using="Please select category")
-    // private WebElement ahf;
-
     public SupportPage() {        
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
@@ -81,10 +78,9 @@ public class SupportPage extends BasePage{
         }catch(Exception e){
             System.out.println("User is not able to Add Description");
         }
-    }
+    }     
 
     public void clickOnQueryButton(){
-
         try{
         finalcreateQueryButton.click();
         }catch(Exception e){
@@ -104,12 +100,12 @@ public class SupportPage extends BasePage{
 
     public String getErrorMessage_Category(){
         WebElement element = wait.until(ExpectedConditions.visibilityOf(errorForSelectCategory));
-        return element.getText();
+        return element.getAttribute("content-desc");
     }
 
     public String getErrorMessage_Descritpion(){
         WebElement element = wait.until(ExpectedConditions.visibilityOf(errorForDescritpion));
-        return element.getText();
+        return element.getAttribute("content-desc");
     }
     
 }

@@ -5,11 +5,11 @@
     <classes>
       <class name="com.tvs.pgm.threew.mobile.tests.SupportTest">
         <methods>
-          <include name="verifyErrorMesage_Without_TitleAndDescritpion"/>
           <include name="verifyQueryCreatedSuccessfully"/>
           <include name="tearDown"/>
           <include name="setup"/>
           <include name="captureResult"/>
+          <include name="verifyErrorMessage_without_Category_Description"/>
           <include name="startTest"/>
         </methods>
       </class> <!-- com.tvs.pgm.threew.mobile.tests.SupportTest -->
