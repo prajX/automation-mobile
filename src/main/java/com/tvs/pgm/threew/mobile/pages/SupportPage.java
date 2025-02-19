@@ -110,7 +110,7 @@ public class SupportPage extends BasePage{
 
     public String getErrorMessage_Category(){
         WebElement element = wait.until(ExpectedConditions.visibilityOf(errorForSelectCategory));
-        return element.getText();
+        return element.getAttribute("content-desc");
     }
 
     public String getErrorMessage_Description(){

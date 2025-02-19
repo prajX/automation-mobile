@@ -55,7 +55,7 @@ public class BaseTest {
             test.skip("Test Skipped");
         }
 
-        String screenshotPath = "C:\\Users\\admin\\Desktop\\3wautomation\\automation-mobile\\src\\test\\resources\\screenshots\\" + result.getName() + ".jpeg";
+        String screenshotPath = "D:\\Automation\\Mobile\\TVSThreeW\\automation-mobile\\src\\test\\resources\\screenshots\\" + result.getName() + ".jpeg";
 
     // Take Screenshot
     File screenshot = ((TakesScreenshot) DriverManager.getDriver()).getScreenshotAs(OutputType.FILE);

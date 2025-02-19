@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="20" passed="18" failed="2" skipped="0">
+<testng-results ignored="0" total="20" passed="20" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-19T17:46:15 IST" name="Surefire suite" finished-at="2025-02-19T17:47:10 IST" duration-ms="55189">
+  <suite started-at="2025-02-19T18:05:27 IST" name="Surefire suite" finished-at="2025-02-19T18:06:22 IST" duration-ms="55120">
     <groups>
     </groups>
-    <test started-at="2025-02-19T17:46:15 IST" name="Surefire test" finished-at="2025-02-19T17:47:10 IST" duration-ms="55189">
+    <test started-at="2025-02-19T18:05:27 IST" name="Surefire test" finished-at="2025-02-19T18:06:22 IST" duration-ms="55120">
       <class name="com.tvs.pgm.threew.mobile.tests.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tvs.pgm.threew.mobile.tests.LoginTest@19bb07ed]" started-at="2025-02-19T17:46:15 IST" name="setup" finished-at="2025-02-19T17:46:16 IST" duration-ms="758" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tvs.pgm.threew.mobile.tests.LoginTest@19bb07ed]" started-at="2025-02-19T18:05:27 IST" name="setup" finished-at="2025-02-19T18:05:28 IST" duration-ms="849" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.LoginTest@19bb07ed]" started-at="2025-02-19T17:46:16 IST" name="startTest" finished-at="2025-02-19T17:46:16 IST" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.LoginTest@19bb07ed]" started-at="2025-02-19T18:05:28 IST" name="startTest" finished-at="2025-02-19T18:05:28 IST" duration-ms="16" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,11 +22,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method signature="testTextField()[pri:1, instance:com.tvs.pgm.threew.mobile.tests.LoginTest@19bb07ed]" started-at="2025-02-19T17:46:16 IST" name="testTextField" description="Verify that user can see Enter Mobile Number Text on the Login screen" finished-at="2025-02-19T17:46:17 IST" duration-ms="908" status="PASS">
+        <test-method signature="testTextField()[pri:1, instance:com.tvs.pgm.threew.mobile.tests.LoginTest@19bb07ed]" started-at="2025-02-19T18:05:28 IST" name="testTextField" description="Verify that user can see Enter Mobile Number Text on the Login screen" finished-at="2025-02-19T18:05:29 IST" duration-ms="562" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTextField -->
-        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.LoginTest@19bb07ed]" started-at="2025-02-19T17:46:17 IST" name="captureResult" finished-at="2025-02-19T17:46:17 IST" duration-ms="822" status="PASS">
+        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.LoginTest@19bb07ed]" started-at="2025-02-19T18:05:29 IST" name="captureResult" finished-at="2025-02-19T18:05:29 IST" duration-ms="737" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureResult -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.LoginTest@19bb07ed]" started-at="2025-02-19T17:46:17 IST" name="startTest" finished-at="2025-02-19T17:46:17 IST" duration-ms="1" status="PASS">
+        <test-method signature="wrongMobileNumber()[pri:2, instance:com.tvs.pgm.threew.mobile.tests.LoginTest@19bb07ed]" started-at="2025-02-19T18:05:29 IST" name="wrongMobileNumber" description="Verify that the system not able to move forward with less than 10 digit" finished-at="2025-02-19T18:05:32 IST" duration-ms="2249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrongMobileNumber -->
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.LoginTest@19bb07ed]" started-at="2025-02-19T18:05:29 IST" name="startTest" finished-at="2025-02-19T18:05:29 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,11 +52,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method signature="wrongMobileNumber()[pri:2, instance:com.tvs.pgm.threew.mobile.tests.LoginTest@19bb07ed]" started-at="2025-02-19T17:46:17 IST" name="wrongMobileNumber" description="Verify that the system not able to move forward with less than 10 digit" finished-at="2025-02-19T17:46:20 IST" duration-ms="2256" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wrongMobileNumber -->
-        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.LoginTest@19bb07ed]" started-at="2025-02-19T17:46:20 IST" name="captureResult" finished-at="2025-02-19T17:46:20 IST" duration-ms="724" status="PASS">
+        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.LoginTest@19bb07ed]" started-at="2025-02-19T18:05:32 IST" name="captureResult" finished-at="2025-02-19T18:05:32 IST" duration-ms="806" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -63,11 +63,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureResult -->
-        <test-method signature="enterMob()[pri:3, instance:com.tvs.pgm.threew.mobile.tests.LoginTest@19bb07ed]" started-at="2025-02-19T17:46:20 IST" name="enterMob" description="Verify that the user can enter 10 digit mobile number in the Mobile Number field" finished-at="2025-02-19T17:46:22 IST" duration-ms="1586" status="PASS">
+        <test-method signature="enterMob()[pri:3, instance:com.tvs.pgm.threew.mobile.tests.LoginTest@19bb07ed]" started-at="2025-02-19T18:05:32 IST" name="enterMob" description="Verify that the user can enter 10 digit mobile number in the Mobile Number field" finished-at="2025-02-19T18:05:34 IST" duration-ms="1523" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterMob -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.LoginTest@19bb07ed]" started-at="2025-02-19T17:46:20 IST" name="startTest" finished-at="2025-02-19T17:46:20 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.LoginTest@19bb07ed]" started-at="2025-02-19T18:05:32 IST" name="startTest" finished-at="2025-02-19T18:05:32 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -78,7 +78,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.LoginTest@19bb07ed]" started-at="2025-02-19T17:46:22 IST" name="captureResult" finished-at="2025-02-19T17:46:23 IST" duration-ms="751" status="PASS">
+        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.LoginTest@19bb07ed]" started-at="2025-02-19T18:05:34 IST" name="captureResult" finished-at="2025-02-19T18:05:35 IST" duration-ms="694" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -89,11 +89,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureResult -->
-        <test-method signature="clickVerifyNumberButton()[pri:4, instance:com.tvs.pgm.threew.mobile.tests.LoginTest@19bb07ed]" started-at="2025-02-19T17:46:23 IST" name="clickVerifyNumberButton" description="Verify that the user is able to land on the OTP Screen" finished-at="2025-02-19T17:46:24 IST" duration-ms="1193" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickVerifyNumberButton -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.LoginTest@19bb07ed]" started-at="2025-02-19T17:46:23 IST" name="startTest" finished-at="2025-02-19T17:46:23 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.LoginTest@19bb07ed]" started-at="2025-02-19T18:05:35 IST" name="startTest" finished-at="2025-02-19T18:05:35 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -104,7 +100,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.LoginTest@19bb07ed]" started-at="2025-02-19T17:46:24 IST" name="captureResult" finished-at="2025-02-19T17:46:25 IST" duration-ms="711" status="PASS">
+        <test-method signature="clickVerifyNumberButton()[pri:4, instance:com.tvs.pgm.threew.mobile.tests.LoginTest@19bb07ed]" started-at="2025-02-19T18:05:35 IST" name="clickVerifyNumberButton" description="Verify that the user is able to land on the OTP Screen" finished-at="2025-02-19T18:05:36 IST" duration-ms="1214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickVerifyNumberButton -->
+        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.LoginTest@19bb07ed]" started-at="2025-02-19T18:05:36 IST" name="captureResult" finished-at="2025-02-19T18:05:37 IST" duration-ms="751" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -117,11 +117,11 @@
         </test-method> <!-- captureResult -->
       </class> <!-- com.tvs.pgm.threew.mobile.tests.LoginTest -->
       <class name="com.tvs.pgm.threew.mobile.tests.OTPTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tvs.pgm.threew.mobile.tests.OTPTest@10e41621]" started-at="2025-02-19T17:46:25 IST" name="setup" finished-at="2025-02-19T17:46:25 IST" duration-ms="173" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tvs.pgm.threew.mobile.tests.OTPTest@10e41621]" started-at="2025-02-19T18:05:37 IST" name="setup" finished-at="2025-02-19T18:05:37 IST" duration-ms="245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.OTPTest@10e41621]" started-at="2025-02-19T17:46:25 IST" name="startTest" finished-at="2025-02-19T17:46:25 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.OTPTest@10e41621]" started-at="2025-02-19T18:05:37 IST" name="startTest" finished-at="2025-02-19T18:05:37 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -132,101 +132,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method signature="VerifyWithlessThanFiveDigit()[pri:5, instance:com.tvs.pgm.threew.mobile.tests.OTPTest@10e41621]" started-at="2025-02-19T17:46:25 IST" name="VerifyWithlessThanFiveDigit" description="Verify that the system can not move forward with less than 5 digit OTP" finished-at="2025-02-19T17:46:27 IST" duration-ms="2182" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[The element 'By.xpath: //android.widget.EditText' is not linked to the same object in DOM anymore
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [c72b2745-a6c2-41d9-9297-b41db86a62af, clickElement {id=00000000-0000-02d1-0000-000e00000004}]
-Capabilities {appium:appActivity: com.tvs_pgm.tvs.MainActivity, appium:appPackage: com.tvs.tvs_pgm_dev, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.tvs_pgm.tvs.MainActivity, appPackage: com.tvs.tvs_pgm_dev, automationName: UIAutomator2, deviceName: 1a16b9720403, dontStopAppOnReset: true, noReset: true, platformName: ANDROID}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Xiaomi, appium:deviceModel: M2003J15SC, appium:deviceName: 1a16b9720403, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: 1a16b9720403, appium:dontStopAppOnReset: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.75, appium:platformVersion: 12, appium:statBarHeight: 100, appium:takesScreenshot: true, appium:viewportRect: {height: 2240, left: 0, top: 100, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Element: [[AndroidDriver:  on ANDROID (c72b2745-a6c2-41d9-9297-b41db86a62af)] -> xpath: //android.widget.EditText]
-Session ID: c72b2745-a6c2-41d9-9297-b41db86a62af]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: The element 'By.xpath: //android.widget.EditText' is not linked to the same object in DOM anymore
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [c72b2745-a6c2-41d9-9297-b41db86a62af, clickElement {id=00000000-0000-02d1-0000-000e00000004}]
-Capabilities {appium:appActivity: com.tvs_pgm.tvs.MainActivity, appium:appPackage: com.tvs.tvs_pgm_dev, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.tvs_pgm.tvs.MainActivity, appPackage: com.tvs.tvs_pgm_dev, automationName: UIAutomator2, deviceName: 1a16b9720403, dontStopAppOnReset: true, noReset: true, platformName: ANDROID}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Xiaomi, appium:deviceModel: M2003J15SC, appium:deviceName: 1a16b9720403, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: 1a16b9720403, appium:dontStopAppOnReset: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.75, appium:platformVersion: 12, appium:statBarHeight: 100, appium:takesScreenshot: true, appium:viewportRect: {height: 2240, left: 0, top: 100, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Element: [[AndroidDriver:  on ANDROID (c72b2745-a6c2-41d9-9297-b41db86a62af)] -> xpath: //android.widget.EditText]
-Session ID: c72b2745-a6c2-41d9-9297-b41db86a62af
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:42)
-at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:65)
-at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:77)
-at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$22476Pqu.click(Unknown Source)
-at com.tvs.pgm.threew.mobile.pages.OtpPage.clickOnOTPBox(OtpPage.java:36)
-at com.tvs.pgm.threew.mobile.tests.OTPTest.VerifyWithlessThanFiveDigit(OTPTest.java:22)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+        <test-method signature="VerifyWithlessThanFiveDigit()[pri:5, instance:com.tvs.pgm.threew.mobile.tests.OTPTest@10e41621]" started-at="2025-02-19T18:05:37 IST" name="VerifyWithlessThanFiveDigit" description="Verify that the system can not move forward with less than 5 digit OTP" finished-at="2025-02-19T18:05:42 IST" duration-ms="4846" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyWithlessThanFiveDigit -->
-        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.OTPTest@10e41621]" started-at="2025-02-19T17:46:27 IST" name="captureResult" finished-at="2025-02-19T17:46:28 IST" duration-ms="751" status="PASS">
+        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.OTPTest@10e41621]" started-at="2025-02-19T18:05:42 IST" name="captureResult" finished-at="2025-02-19T18:05:42 IST" duration-ms="696" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=VerifyWithlessThanFiveDigit status=FAILURE method=OTPTest.VerifyWithlessThanFiveDigit()[pri:5, instance:com.tvs.pgm.threew.mobile.tests.OTPTest@10e41621] output={null}]]]>
+                <![CDATA[[TestResult name=VerifyWithlessThanFiveDigit status=SUCCESS method=OTPTest.VerifyWithlessThanFiveDigit()[pri:5, instance:com.tvs.pgm.threew.mobile.tests.OTPTest@10e41621] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureResult -->
-        <test-method signature="verifyOTPEnteredSuccess()[pri:6, instance:com.tvs.pgm.threew.mobile.tests.OTPTest@10e41621]" started-at="2025-02-19T17:46:28 IST" name="verifyOTPEnteredSuccess" description="Verify that the user is able to move forward with correct OTP" finished-at="2025-02-19T17:46:30 IST" duration-ms="2371" status="PASS">
+        <test-method signature="verifyOTPEnteredSuccess()[pri:6, instance:com.tvs.pgm.threew.mobile.tests.OTPTest@10e41621]" started-at="2025-02-19T18:05:42 IST" name="verifyOTPEnteredSuccess" description="Verify that the user is able to move forward with correct OTP" finished-at="2025-02-19T18:05:45 IST" duration-ms="2318" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOTPEnteredSuccess -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.OTPTest@10e41621]" started-at="2025-02-19T17:46:28 IST" name="startTest" finished-at="2025-02-19T17:46:28 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.OTPTest@10e41621]" started-at="2025-02-19T18:05:42 IST" name="startTest" finished-at="2025-02-19T18:05:42 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -237,7 +162,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.OTPTest@10e41621]" started-at="2025-02-19T17:46:30 IST" name="captureResult" finished-at="2025-02-19T17:46:31 IST" duration-ms="696" status="PASS">
+        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.OTPTest@10e41621]" started-at="2025-02-19T18:05:45 IST" name="captureResult" finished-at="2025-02-19T18:05:45 IST" duration-ms="672" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -248,7 +173,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureResult -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.OTPTest@10e41621]" started-at="2025-02-19T17:46:31 IST" name="startTest" finished-at="2025-02-19T17:46:31 IST" duration-ms="1" status="PASS">
+        <test-method signature="VerifyOTPSubmitSuccess()[pri:7, instance:com.tvs.pgm.threew.mobile.tests.OTPTest@10e41621]" started-at="2025-02-19T18:05:45 IST" name="VerifyOTPSubmitSuccess" description="Verify that the user can click on the submit button And successfully land on the HomePage" finished-at="2025-02-19T18:05:48 IST" duration-ms="2303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyOTPSubmitSuccess -->
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.OTPTest@10e41621]" started-at="2025-02-19T18:05:45 IST" name="startTest" finished-at="2025-02-19T18:05:45 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -259,11 +188,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method signature="VerifyOTPSubmitSuccess()[pri:7, instance:com.tvs.pgm.threew.mobile.tests.OTPTest@10e41621]" started-at="2025-02-19T17:46:31 IST" name="VerifyOTPSubmitSuccess" description="Verify that the user can click on the submit button And successfully land on the HomePage" finished-at="2025-02-19T17:46:32 IST" duration-ms="987" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyOTPSubmitSuccess -->
-        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.OTPTest@10e41621]" started-at="2025-02-19T17:46:32 IST" name="captureResult" finished-at="2025-02-19T17:46:33 IST" duration-ms="723" status="PASS">
+        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.OTPTest@10e41621]" started-at="2025-02-19T18:05:48 IST" name="captureResult" finished-at="2025-02-19T18:05:49 IST" duration-ms="877" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -276,15 +201,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
         </test-method> <!-- captureResult -->
       </class> <!-- com.tvs.pgm.threew.mobile.tests.OTPTest -->
       <class name="com.tvs.pgm.threew.mobile.tests.SupportTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tvs.pgm.threew.mobile.tests.SupportTest@a9cd3b1]" started-at="2025-02-19T17:46:49 IST" name="setup" finished-at="2025-02-19T17:46:49 IST" duration-ms="313" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tvs.pgm.threew.mobile.tests.SupportTest@a9cd3b1]" started-at="2025-02-19T18:06:02 IST" name="setup" finished-at="2025-02-19T18:06:02 IST" duration-ms="440" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyBackArrowVisibleOnSupportScreeen()[pri:17, instance:com.tvs.pgm.threew.mobile.tests.SupportTest@a9cd3b1]" started-at="2025-02-19T17:46:49 IST" name="verifyBackArrowVisibleOnSupportScreeen" description="Verify that the Back arrow is present on the  Support screen" finished-at="2025-02-19T17:46:50 IST" duration-ms="173" status="PASS">
+        <test-method signature="verifyBackArrowVisibleOnSupportScreeen()[pri:17, instance:com.tvs.pgm.threew.mobile.tests.SupportTest@a9cd3b1]" started-at="2025-02-19T18:06:02 IST" name="verifyBackArrowVisibleOnSupportScreeen" description="Verify that the Back arrow is present on the  Support screen" finished-at="2025-02-19T18:06:03 IST" duration-ms="339" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBackArrowVisibleOnSupportScreeen -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.SupportTest@a9cd3b1]" started-at="2025-02-19T17:46:49 IST" name="startTest" finished-at="2025-02-19T17:46:49 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.SupportTest@a9cd3b1]" started-at="2025-02-19T18:06:02 IST" name="startTest" finished-at="2025-02-19T18:06:02 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -295,7 +220,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.SupportTest@a9cd3b1]" started-at="2025-02-19T17:46:50 IST" name="captureResult" finished-at="2025-02-19T17:46:50 IST" duration-ms="659" status="PASS">
+        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.SupportTest@a9cd3b1]" started-at="2025-02-19T18:06:03 IST" name="captureResult" finished-at="2025-02-19T18:06:03 IST" duration-ms="626" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -306,11 +231,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureResult -->
-        <test-method signature="verifyErrorMesage_Without_TitleAndDescritpion()[pri:18, instance:com.tvs.pgm.threew.mobile.tests.SupportTest@a9cd3b1]" started-at="2025-02-19T17:46:50 IST" name="verifyErrorMesage_Without_TitleAndDescritpion" description="Verify that the system is giving an error message if user is trying to create query without Title and Description" finished-at="2025-02-19T17:46:53 IST" duration-ms="2501" status="PASS">
+        <test-method signature="verifyErrorMesage_Without_TitleAndDescritpion()[pri:18, instance:com.tvs.pgm.threew.mobile.tests.SupportTest@a9cd3b1]" started-at="2025-02-19T18:06:03 IST" name="verifyErrorMesage_Without_TitleAndDescritpion" description="Verify that the system is giving an error message if user is trying to create query without Title and Description" finished-at="2025-02-19T18:06:06 IST" duration-ms="2476" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyErrorMesage_Without_TitleAndDescritpion -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.SupportTest@a9cd3b1]" started-at="2025-02-19T17:46:50 IST" name="startTest" finished-at="2025-02-19T17:46:50 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.SupportTest@a9cd3b1]" started-at="2025-02-19T18:06:03 IST" name="startTest" finished-at="2025-02-19T18:06:03 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -321,7 +246,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.SupportTest@a9cd3b1]" started-at="2025-02-19T17:46:53 IST" name="captureResult" finished-at="2025-02-19T17:46:53 IST" duration-ms="680" status="PASS">
+        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.SupportTest@a9cd3b1]" started-at="2025-02-19T18:06:06 IST" name="captureResult" finished-at="2025-02-19T18:06:07 IST" duration-ms="756" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -332,58 +257,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureResult -->
-        <test-method signature="verifyErrorMessage_without_Category_Description()[pri:19, instance:com.tvs.pgm.threew.mobile.tests.SupportTest@a9cd3b1]" started-at="2025-02-19T17:46:53 IST" name="verifyErrorMessage_without_Category_Description" description="Verify that the system is giving an error message if user is trying to create query without category and Description" finished-at="2025-02-19T17:46:58 IST" duration-ms="4077" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Please select category] but found []]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Please select category] but found []
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at com.tvs.pgm.threew.mobile.tests.SupportTest.verifyErrorMessage_without_Category_Description(SupportTest.java:34)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="verifyErrorMessage_without_Category_Description()[pri:19, instance:com.tvs.pgm.threew.mobile.tests.SupportTest@a9cd3b1]" started-at="2025-02-19T18:06:07 IST" name="verifyErrorMessage_without_Category_Description" description="Verify that the system is giving an error message if user is trying to create query without category and Description" finished-at="2025-02-19T18:06:11 IST" duration-ms="4137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyErrorMessage_without_Category_Description -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.SupportTest@a9cd3b1]" started-at="2025-02-19T17:46:53 IST" name="startTest" finished-at="2025-02-19T17:46:53 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.SupportTest@a9cd3b1]" started-at="2025-02-19T18:06:07 IST" name="startTest" finished-at="2025-02-19T18:06:07 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -394,22 +272,22 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.SupportTest@a9cd3b1]" started-at="2025-02-19T17:46:58 IST" name="captureResult" finished-at="2025-02-19T17:46:58 IST" duration-ms="862" status="PASS">
+        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.SupportTest@a9cd3b1]" started-at="2025-02-19T18:06:11 IST" name="captureResult" finished-at="2025-02-19T18:06:11 IST" duration-ms="692" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyErrorMessage_without_Category_Description status=FAILURE method=SupportTest.verifyErrorMessage_without_Category_Description()[pri:19, instance:com.tvs.pgm.threew.mobile.tests.SupportTest@a9cd3b1] output={null}]]]>
+                <![CDATA[[TestResult name=verifyErrorMessage_without_Category_Description status=SUCCESS method=SupportTest.verifyErrorMessage_without_Category_Description()[pri:19, instance:com.tvs.pgm.threew.mobile.tests.SupportTest@a9cd3b1] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureResult -->
-        <test-method signature="verifyQueryCreatedSuccessfully()[pri:20, instance:com.tvs.pgm.threew.mobile.tests.SupportTest@a9cd3b1]" started-at="2025-02-19T17:46:58 IST" name="verifyQueryCreatedSuccessfully" description="Verify that the Query Generated successfully" finished-at="2025-02-19T17:47:09 IST" duration-ms="10644" status="PASS">
+        <test-method signature="verifyQueryCreatedSuccessfully()[pri:20, instance:com.tvs.pgm.threew.mobile.tests.SupportTest@a9cd3b1]" started-at="2025-02-19T18:06:11 IST" name="verifyQueryCreatedSuccessfully" description="Verify that the Query Generated successfully" finished-at="2025-02-19T18:06:21 IST" duration-ms="9906" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyQueryCreatedSuccessfully -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.SupportTest@a9cd3b1]" started-at="2025-02-19T17:46:58 IST" name="startTest" finished-at="2025-02-19T17:46:58 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.SupportTest@a9cd3b1]" started-at="2025-02-19T18:06:11 IST" name="startTest" finished-at="2025-02-19T18:06:11 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -420,7 +298,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.SupportTest@a9cd3b1]" started-at="2025-02-19T17:47:09 IST" name="captureResult" finished-at="2025-02-19T17:47:10 IST" duration-ms="1049" status="PASS">
+        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.SupportTest@a9cd3b1]" started-at="2025-02-19T18:06:21 IST" name="captureResult" finished-at="2025-02-19T18:06:22 IST" duration-ms="957" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -433,35 +311,35 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
         </test-method> <!-- captureResult -->
       </class> <!-- com.tvs.pgm.threew.mobile.tests.SupportTest -->
       <class name="com.tvs.pgm.threew.mobile.tests.Q_SupportListingTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tvs.pgm.threew.mobile.tests.Q_SupportListingTest@57c758ac]" started-at="2025-02-19T17:46:48 IST" name="setup" finished-at="2025-02-19T17:46:48 IST" duration-ms="78" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tvs.pgm.threew.mobile.tests.Q_SupportListingTest@57c758ac]" started-at="2025-02-19T18:06:01 IST" name="setup" finished-at="2025-02-19T18:06:01 IST" duration-ms="78" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyCreateQueryButtonClicksON_SupportListingScreen()[pri:16, instance:com.tvs.pgm.threew.mobile.tests.Q_SupportListingTest@57c758ac]" started-at="2025-02-19T17:46:48 IST" name="verifyCreateQueryButtonClicksON_SupportListingScreen" description="Verify that the User can click on the Create query button in the Query listing screen" finished-at="2025-02-19T17:46:49 IST" duration-ms="1209" status="PASS">
+        <test-method signature="verifyCreateQueryButtonClicksON_SupportListingScreen()[pri:16, instance:com.tvs.pgm.threew.mobile.tests.Q_SupportListingTest@57c758ac]" started-at="2025-02-19T18:06:01 IST" name="verifyCreateQueryButtonClicksON_SupportListingScreen" description="Verify that the User can click on the Create query button in the Query listing screen" finished-at="2025-02-19T18:06:02 IST" duration-ms="800" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCreateQueryButtonClicksON_SupportListingScreen -->
       </class> <!-- com.tvs.pgm.threew.mobile.tests.Q_SupportListingTest -->
       <class name="com.tvs.pgm.threew.mobile.tests.BaseTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tvs.pgm.threew.mobile.tests.BaseTest@703580bf]" started-at="2025-02-19T17:46:04 IST" name="setup" finished-at="2025-02-19T17:46:15 IST" duration-ms="10549" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tvs.pgm.threew.mobile.tests.BaseTest@703580bf]" started-at="2025-02-19T18:05:19 IST" name="setup" finished-at="2025-02-19T18:05:27 IST" duration-ms="8354" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tvs.pgm.threew.mobile.tests.BaseTest@703580bf]" started-at="2025-02-19T17:47:10 IST" name="tearDown" finished-at="2025-02-19T17:47:11 IST" duration-ms="778" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tvs.pgm.threew.mobile.tests.BaseTest@703580bf]" started-at="2025-02-19T18:06:22 IST" name="tearDown" finished-at="2025-02-19T18:06:23 IST" duration-ms="660" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.tvs.pgm.threew.mobile.tests.BaseTest -->
       <class name="com.tvs.pgm.threew.mobile.tests.P_HomeTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T17:46:33 IST" name="setup" finished-at="2025-02-19T17:46:33 IST" duration-ms="220" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T18:05:49 IST" name="setup" finished-at="2025-02-19T18:05:49 IST" duration-ms="207" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="settingIconpresent()[pri:8, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T17:46:33 IST" name="settingIconpresent" description="Verify that the setting Icon is present on the Homepage" finished-at="2025-02-19T17:46:35 IST" duration-ms="2340" status="PASS">
+        <test-method signature="settingIconpresent()[pri:8, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T18:05:49 IST" name="settingIconpresent" description="Verify that the setting Icon is present on the Homepage" finished-at="2025-02-19T18:05:49 IST" duration-ms="307" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settingIconpresent -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T17:46:33 IST" name="startTest" finished-at="2025-02-19T17:46:33 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T18:05:49 IST" name="startTest" finished-at="2025-02-19T18:05:49 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -472,7 +350,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T17:46:35 IST" name="captureResult" finished-at="2025-02-19T17:46:36 IST" duration-ms="766" status="PASS">
+        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T18:05:49 IST" name="captureResult" finished-at="2025-02-19T18:05:50 IST" duration-ms="776" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -483,7 +361,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureResult -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T17:46:36 IST" name="startTest" finished-at="2025-02-19T17:46:36 IST" duration-ms="1" status="PASS">
+        <test-method signature="profileIconePresent()[pri:9, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T18:05:50 IST" name="profileIconePresent" description="Verify that the profile Icon is present on the Homepage" finished-at="2025-02-19T18:05:51 IST" duration-ms="1156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- profileIconePresent -->
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T18:05:50 IST" name="startTest" finished-at="2025-02-19T18:05:50 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -494,11 +376,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method signature="profileIconePresent()[pri:9, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T17:46:36 IST" name="profileIconePresent" description="Verify that the profile Icon is present on the Homepage" finished-at="2025-02-19T17:46:38 IST" duration-ms="1763" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- profileIconePresent -->
-        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T17:46:38 IST" name="captureResult" finished-at="2025-02-19T17:46:38 IST" duration-ms="756" status="PASS">
+        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T18:05:51 IST" name="captureResult" finished-at="2025-02-19T18:05:52 IST" duration-ms="801" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -509,11 +387,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureResult -->
-        <test-method signature="verifyNeedAnyHelpTileVisible()[pri:10, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T17:46:38 IST" name="verifyNeedAnyHelpTileVisible" description="Verify that the Need Any Help tile is present on the screen" finished-at="2025-02-19T17:46:39 IST" duration-ms="387" status="PASS">
+        <test-method signature="verifyNeedAnyHelpTileVisible()[pri:10, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T18:05:52 IST" name="verifyNeedAnyHelpTileVisible" description="Verify that the Need Any Help tile is present on the screen" finished-at="2025-02-19T18:05:52 IST" duration-ms="204" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNeedAnyHelpTileVisible -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T17:46:38 IST" name="startTest" finished-at="2025-02-19T17:46:38 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T18:05:52 IST" name="startTest" finished-at="2025-02-19T18:05:52 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -524,7 +402,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T17:46:39 IST" name="captureResult" finished-at="2025-02-19T17:46:40 IST" duration-ms="872" status="PASS">
+        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T18:05:52 IST" name="captureResult" finished-at="2025-02-19T18:05:53 IST" duration-ms="828" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -535,11 +413,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureResult -->
-        <test-method signature="verifyFindDealerTileVisible()[pri:11, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T17:46:40 IST" name="verifyFindDealerTileVisible" description="Verify that the Find a Dealer tile is present on the screen" finished-at="2025-02-19T17:46:40 IST" duration-ms="378" status="PASS">
+        <test-method signature="verifyFindDealerTileVisible()[pri:11, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T18:05:53 IST" name="verifyFindDealerTileVisible" description="Verify that the Find a Dealer tile is present on the screen" finished-at="2025-02-19T18:05:53 IST" duration-ms="253" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFindDealerTileVisible -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T17:46:40 IST" name="startTest" finished-at="2025-02-19T17:46:40 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T18:05:53 IST" name="startTest" finished-at="2025-02-19T18:05:53 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -550,7 +428,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T17:46:40 IST" name="captureResult" finished-at="2025-02-19T17:46:41 IST" duration-ms="840" status="PASS">
+        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T18:05:53 IST" name="captureResult" finished-at="2025-02-19T18:05:54 IST" duration-ms="860" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -561,11 +439,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureResult -->
-        <test-method signature="verifyVehicleServicesTileVisible()[pri:12, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T17:46:41 IST" name="verifyVehicleServicesTileVisible" description="Verify that the Vehicle_Services tile is present on the screen" finished-at="2025-02-19T17:46:41 IST" duration-ms="260" status="PASS">
+        <test-method signature="verifyVehicleServicesTileVisible()[pri:12, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T18:05:54 IST" name="verifyVehicleServicesTileVisible" description="Verify that the Vehicle_Services tile is present on the screen" finished-at="2025-02-19T18:05:54 IST" duration-ms="203" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyVehicleServicesTileVisible -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T17:46:41 IST" name="startTest" finished-at="2025-02-19T17:46:41 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T18:05:54 IST" name="startTest" finished-at="2025-02-19T18:05:54 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -576,7 +454,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T17:46:41 IST" name="captureResult" finished-at="2025-02-19T17:46:42 IST" duration-ms="794" status="PASS">
+        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T18:05:54 IST" name="captureResult" finished-at="2025-02-19T18:05:55 IST" duration-ms="811" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -587,7 +465,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureResult -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T17:46:42 IST" name="startTest" finished-at="2025-02-19T17:46:42 IST" duration-ms="1" status="PASS">
+        <test-method signature="verifyTrainingTileVisible()[pri:13, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T18:05:55 IST" name="verifyTrainingTileVisible" description="Verify that the Traingin and Troubleshooting tile is present on the screen" finished-at="2025-02-19T18:05:55 IST" duration-ms="308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTrainingTileVisible -->
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T18:05:55 IST" name="startTest" finished-at="2025-02-19T18:05:55 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -598,11 +480,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method signature="verifyTrainingTileVisible()[pri:13, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T17:46:42 IST" name="verifyTrainingTileVisible" description="Verify that the Traingin and Troubleshooting tile is present on the screen" finished-at="2025-02-19T17:46:42 IST" duration-ms="216" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTrainingTileVisible -->
-        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T17:46:42 IST" name="captureResult" finished-at="2025-02-19T17:46:43 IST" duration-ms="778" status="PASS">
+        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T18:05:55 IST" name="captureResult" finished-at="2025-02-19T18:05:56 IST" duration-ms="796" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -613,11 +491,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureResult -->
-        <test-method signature="verifyReferralTileVisible()[pri:14, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T17:46:43 IST" name="verifyReferralTileVisible" description="Verify that the Referral tile is present on the screen" finished-at="2025-02-19T17:46:43 IST" duration-ms="211" status="PASS">
+        <test-method signature="verifyReferralTileVisible()[pri:14, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T18:05:56 IST" name="verifyReferralTileVisible" description="Verify that the Referral tile is present on the screen" finished-at="2025-02-19T18:05:56 IST" duration-ms="390" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyReferralTileVisible -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T17:46:43 IST" name="startTest" finished-at="2025-02-19T17:46:43 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T18:05:56 IST" name="startTest" finished-at="2025-02-19T18:05:56 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -628,7 +506,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T17:46:43 IST" name="captureResult" finished-at="2025-02-19T17:46:44 IST" duration-ms="759" status="PASS">
+        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T18:05:57 IST" name="captureResult" finished-at="2025-02-19T18:05:57 IST" duration-ms="877" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -639,11 +517,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureResult -->
-        <test-method signature="verifyHelpButtonClickable()[pri:15, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T17:46:44 IST" name="verifyHelpButtonClickable" description="Verify that the user can click on the Need Help tile is present on the screen" finished-at="2025-02-19T17:46:47 IST" depends-on-methods="com.tvs.pgm.threew.mobile.tests.P_HomeTest.verifyNeedAnyHelpTileVisible" duration-ms="3293" status="PASS">
+        <test-method signature="verifyHelpButtonClickable()[pri:15, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T18:05:57 IST" name="verifyHelpButtonClickable" description="Verify that the user can click on the Need Help tile is present on the screen" finished-at="2025-02-19T18:06:00 IST" depends-on-methods="com.tvs.pgm.threew.mobile.tests.P_HomeTest.verifyNeedAnyHelpTileVisible" duration-ms="2979" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHelpButtonClickable -->
-        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T17:46:44 IST" name="startTest" finished-at="2025-02-19T17:46:44 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T18:05:57 IST" name="startTest" finished-at="2025-02-19T18:05:57 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -654,7 +532,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T17:46:47 IST" name="captureResult" finished-at="2025-02-19T17:46:48 IST" duration-ms="656" status="PASS">
+        <test-method is-config="true" signature="captureResult(org.testng.ITestResult)[pri:0, instance:com.tvs.pgm.threew.mobile.tests.P_HomeTest@67a20f67]" started-at="2025-02-19T18:06:00 IST" name="captureResult" finished-at="2025-02-19T18:06:01 IST" duration-ms="737" status="PASS">
           <params>
             <param index="0">
               <value>

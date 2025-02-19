@@ -3,15 +3,6 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="com.tvs.pgm.threew.mobile.tests.OTPTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="captureResult"/>
-          <include name="setup"/>
-          <include name="startTest"/>
-          <include name="VerifyWithlessThanFiveDigit"/>
-        </methods>
-      </class> <!-- com.tvs.pgm.threew.mobile.tests.OTPTest -->
       <class name="com.tvs.pgm.threew.mobile.tests.SupportTest">
         <methods>
           <include name="tearDown"/>
