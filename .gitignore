@@ -1,3 +1,10 @@
-"target/" 
-".idea/" 
-"*.log" 
+target/
+.idea/ 
+*.log
+*.class
+test-output/
+*.jpeg
+*.png
+*.jpg
+.vscode/
+
