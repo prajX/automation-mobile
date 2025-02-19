@@ -3,19 +3,21 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="com.tvs.pgm.threew.mobile.tests.BaseTest">
+      <class name="com.tvs.pgm.threew.mobile.tests.OTPTest">
         <methods>
           <include name="tearDown"/>
+          <include name="captureResult"/>
+          <include name="setup"/>
+          <include name="startTest"/>
+          <include name="VerifyWithlessThanFiveDigit"/>
         </methods>
-      </class> <!-- com.tvs.pgm.threew.mobile.tests.BaseTest -->
+      </class> <!-- com.tvs.pgm.threew.mobile.tests.OTPTest -->
       <class name="com.tvs.pgm.threew.mobile.tests.SupportTest">
         <methods>
-          <include name="verifyQueryCreatedSuccessfully"/>
-          <include name="verifyErrorMesage_Without_TitleAndDescritpion"/>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="verifyBackArrowVisibleOnSupportScreeen"/>
           <include name="captureResult"/>
+          <include name="verifyErrorMessage_without_Category_Description"/>
           <include name="startTest"/>
         </methods>
       </class> <!-- com.tvs.pgm.threew.mobile.tests.SupportTest -->

@@ -16,12 +16,8 @@ public class OTPTest extends BaseTest{
         otpPage = new OtpPage();
     }
      
-    // @Test(priority = 5)
-    // public void verifyScrrenTextvalue(){
-    //     org.testng.Assert.assertEquals(otpPage.verifyScreenText(), "Enter OTP sent to");        
-    // }
 
-    @Test(priority = 5)
+    @Test(priority = 5, description = "Verify that the system can not move forward with less than 5 digit OTP")
     public void VerifyWithlessThanFiveDigit(){
         otpPage.clickOnOTPBox();
         otpPage.enterOTP("52");  
@@ -30,13 +26,13 @@ public class OTPTest extends BaseTest{
     }
 
 
-    @Test(priority = 6)
+    @Test(priority = 6, description="Verify that the user is able to move forward with correct OTP")
     public void verifyOTPEnteredSuccess(){
         otpPage.clickOnOTPBox();
         otpPage.enterOTP("54321");
     }
 
-    @Test(priority = 7)
+    @Test(priority = 7, description="Verify that the user can click on the submit button And successfully land on the HomePage")
     public void VerifyOTPSubmitSuccess(){
         otpPage.clickSubmitButton();
     }

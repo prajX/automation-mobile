@@ -14,42 +14,42 @@ public class P_HomeTest extends BaseTest{
         homePage = new HomePage();
     }
 
-    @Test(priority = 8)
+    @Test(priority = 8, description = "Verify that the setting Icon is present on the Homepage")
     public void settingIconpresent(){
         Assert.assertEquals(homePage.verifySettingPresent(), true);
     }
 
-    @Test(priority = 9)
+    @Test(priority = 9, description = "Verify that the profile Icon is present on the Homepage")
     public void profileIconePresent(){
         Assert.assertEquals(homePage.verifyProfilePresent(), true);
     }
 
-    @Test(priority = 10)
+    @Test(priority = 10, description = "Verify that the Need Any Help tile is present on the screen")
     public void verifyNeedAnyHelpTileVisible(){
         homePage.checkHelpTile();
     }
 
-    @Test(priority = 11)
+    @Test(priority = 11,description = "Verify that the Find a Dealer tile is present on the screen")
     public void verifyFindDealerTileVisible(){
         homePage.checkFindDealerTile();
     }
 
-    @Test(priority = 12)
+    @Test(priority = 12, description = "Verify that the Vehicle_Services tile is present on the screen")
     public void verifyVehicleServicesTileVisible(){
         homePage.vehicleServiesTile();
     }
 
-    @Test(priority = 13)
+    @Test(priority = 13, description = "Verify that the Traingin and Troubleshooting tile is present on the screen")
     public void verifyTrainingTileVisible(){
         homePage.checkTraingTile();
     }
 
-    @Test(priority = 14)
+    @Test(priority = 14, description = "Verify that the Referral tile is present on the screen")
     public void verifyReferralTileVisible(){
         homePage.checkRefferalTile();
     }
 
-    @Test(priority = 15, dependsOnMethods = {"verifyNeedAnyHelpTileVisible"})
+    @Test(priority = 15, dependsOnMethods = {"verifyNeedAnyHelpTileVisible"}, description = "Verify that the user can click on the Need Help tile is present on the screen")
     public void verifyHelpButtonClickable() throws InterruptedException{        
         homePage.clickonHelpTile();
         Thread.sleep(2000);

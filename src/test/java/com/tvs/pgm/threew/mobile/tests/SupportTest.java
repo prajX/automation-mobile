@@ -14,19 +14,19 @@ public class SupportTest extends BaseTest {
         supportPage = new SupportPage();
     }
 
-    @Test(priority = 17)
+    @Test(priority = 17, description = "Verify that the Back arrow is present on the  Support screen")
     public void verifyBackArrowVisibleOnSupportScreeen(){
         Assert.assertEquals(supportPage.backArrowPresentOnSupportPage(), true);
     }
 
-    @Test(priority = 18)
+    @Test(priority = 18, description = "Verify that the system is giving an error message if user is trying to create query without Title and Description")
     public void verifyErrorMesage_Without_TitleAndDescritpion() throws InterruptedException{
         supportPage.clickOnQueryButton();
         Assert.assertEquals(supportPage.getErrorMessage_Title(), "Please enter required field");
         Assert.assertEquals(supportPage.getErrorMessage_Description(), "Please add description");
     }
 
-    @Test(priority = 19, enabled = false)
+    @Test(priority = 19, description = "Verify that the system is giving an error message if user is trying to create query without category and Description")
     public void verifyErrorMessage_without_Category_Description() throws InterruptedException{
         supportPage.clickOnTitle();
         supportPage.enterTitle("Need a help regarding support");
@@ -35,7 +35,7 @@ public class SupportTest extends BaseTest {
         Assert.assertEquals(supportPage.getErrorMessage_Description(), "Please add description");
     }
 
-    @Test(priority = 20)
+    @Test(priority = 20, description = "Verify that the Query Generated successfully")
     public void verifyQueryCreatedSuccessfully() throws InterruptedException{
         supportPage.clickOnTitle();
         supportPage.enterTitle("Having a issue");

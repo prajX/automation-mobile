@@ -16,6 +16,7 @@ import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
+import org.testng.annotations.Test;
 
 public class BaseTest {
 
@@ -28,11 +29,20 @@ public class BaseTest {
         ExtentSparkReporter sparkReporter = new ExtentSparkReporter("test-output/ExtentReport.html");
         extent = new ExtentReports();
         extent.attachReporter(sparkReporter);
+        extent.setSystemInfo("Tester", "Mayur Martiwar"); // Change Tester Name
+        extent.setSystemInfo("Project", "Mobile App Testing - 3Wheeler");
+        extent.setSystemInfo("Environment", "Dev");
+        extent.setSystemInfo("OS", System.getProperty("os.name"));
+        extent.setSystemInfo("Java Version", System.getProperty("java.version"));
     }
 
     @BeforeMethod
     public void startTest(Method method) {
-        test = extent.createTest(method.getName());
+        Test testAnnotation = method.getAnnotation(Test.class);
+        String testCaseName = (testAnnotation != null && !testAnnotation.description().isEmpty())? testAnnotation.description():
+        method.getName(); // Fallback to method name
+
+        test = extent.createTest(testCaseName); // Set test name in report
     }
 
     @AfterMethod

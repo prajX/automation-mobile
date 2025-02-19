@@ -15,7 +15,7 @@ public class Q_SupportListingTest {
         supportListingPage = new SupportListingPage();
     }
 
-    @Test(priority = 16)
+    @Test(priority = 16, description = "Verify that the User can click on the Create query button in the Query listing screen")
     public void verifyCreateQueryButtonClicksON_SupportListingScreen(){
         supportListingPage.clickOnCreateQueryButton();
     }

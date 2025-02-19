@@ -19,7 +19,7 @@ public class LoginTest extends BaseTest {
     //     Assert.assertEquals(loginPage.verifyLaungaugeText(), "English");
     // }
 
-    @Test(priority =1)
+    @Test(priority =1, description = "Verify that user can see Enter Mobile Number Text on the Login screen")
     public void testTextField() {
         test.info("Checking Login page Text........");
         try{
@@ -31,25 +31,22 @@ public class LoginTest extends BaseTest {
         }
     }
 
-    // @Test(priority = 2)
-    // public void verifyMobileNumberPlaceholderValue(){
-    //     Assert.assertEquals(loginPage.verifyPlaceHoldervalue(), "Enter your Mobile number here");
-    // }
 
-    @Test(priority=2)
+    @Test(priority=2, description = "Verify that the system not able to move forward with less than 10 digit")
     public void wrongMobileNumber(){
         loginPage.enterMobileNumber("1223334");        
         Assert.assertFalse(loginPage.isverifyNumberButtonNotClickable());
 
     }
 
-    @Test(priority = 3)
+    
+    @Test(priority = 3, description = "Verify that the user can enter 10 digit mobile number in the Mobile Number field")
     public void enterMob(){
         loginPage.enterMobileNumber("1223334444");
         
     }
 
-    @Test(priority = 4)
+    @Test(priority = 4, description= "Verify that the user is able to land on the OTP Screen")
     public void clickVerifyNumberButton(){
         System.out.println(loginPage.isverifyNumberButtonClickable());
         loginPage.clickVerifyNumber();
