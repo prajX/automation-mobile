@@ -33,6 +33,7 @@ public class LoginPage extends BasePage {
     public void enterMobileNumber(String mobileNumber){
        // wait.until(ExpectedConditions.elementToBeClickable(enterMobileNumberField));
         enterMobileNumberField.click();
+        enterMobileNumberField.clear();
         enterMobileNumberField.sendKeys(mobileNumber);
     }
 
@@ -40,6 +41,13 @@ public class LoginPage extends BasePage {
         wait.until(ExpectedConditions.elementToBeClickable(verifyNumberButton));
         return verifyNumberButton.isEnabled();
     }
+
+    public boolean isverifyNumberButtonNotClickable(){
+        //wait.until(ExpectedConditions.elementToBeClickable(verifyNumberButton));
+        return verifyNumberButton.isEnabled();
+    }
+
+   
 
     public void clickVerifyNumber(){
       //  wait.until(ExpectedConditions.elementToBeClickable(verifyNumberButton));

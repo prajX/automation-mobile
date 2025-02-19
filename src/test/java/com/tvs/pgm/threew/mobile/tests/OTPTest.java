@@ -1,12 +1,9 @@
 package com.tvs.pgm.threew.mobile.tests;
 
 import org.testng.annotations.BeforeClass;
-
-import com.tvs.pgm.threew.mobile.pages.LoginPage;
 import com.tvs.pgm.threew.mobile.pages.OtpPage;
-
-import dev.failsafe.internal.util.Assert;
 import org.testng.annotations.Test;
+
 
 
 public class OTPTest extends BaseTest{
@@ -19,19 +16,27 @@ public class OTPTest extends BaseTest{
         otpPage = new OtpPage();
     }
      
-    // @Test
-    // public String verifyOTPScreenTextLine(){
-    //     Assert.assertEquals(otpPage.verifyTextForOTP(),"Enter OTP sent to");
-        
+    // @Test(priority = 5)
+    // public void verifyScrrenTextvalue(){
+    //     org.testng.Assert.assertEquals(otpPage.verifyScreenText(), "Enter OTP sent to");        
     // }
 
-    @Test(priority =4)
+    @Test(priority = 5)
+    public void VerifyWithlessThanFiveDigit(){
+        otpPage.clickOnOTPBox();
+        otpPage.enterOTP("52");  
+        org.testng.Assert.assertEquals(otpPage.submitButtonEnable(), true);      
+
+    }
+
+
+    @Test(priority = 6)
     public void verifyOTPEnteredSuccess(){
         otpPage.clickOnOTPBox();
         otpPage.enterOTP("54321");
     }
 
-    @Test(priority = 5)
+    @Test(priority = 7)
     public void VerifyOTPSubmitSuccess(){
         otpPage.clickSubmitButton();
     }

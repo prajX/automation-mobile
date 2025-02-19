@@ -1,0 +1,9 @@
+<suite name="MySuite">
+    <test name="MyTest">
+        <classes>
+            <class name="com.tvs.pgm.threew.mobile.tests.LoginTest" />
+            <class name="com.tvs.pgm.threew.mobile.tests.OTPTest" />
+            <class name="com.tvs.pgm.threew.mobile.tests.HomeTest" />
+        </classes>
+    </test>
+</suite>
