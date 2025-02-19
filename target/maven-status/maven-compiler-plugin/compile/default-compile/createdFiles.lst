@@ -1,3 +1,5 @@
+com\tvs\pgm\threew\mobile\pages\HomePage.class
+com\tvs\pgm\threew\mobile\base\DriverManager.class
 com\tvs\pgm\threew\mobile\pages\BasePage.class
 com\tvs\pgm\threew\mobile\pages\LoginPage.class
-com\tvs\pgm\threew\mobile\base\DriverManager.class
+com\tvs\pgm\threew\mobile\pages\OtpPage.class
