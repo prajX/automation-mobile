@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import com.tvs.pgm.threew.mobile.pages.SupportPage;
+import com.tvs.pgm.threew.mobile.utils.SupportDataGenerator;
 
 public class SupportTest extends BaseTest {
 
@@ -37,12 +38,19 @@ public class SupportTest extends BaseTest {
 
     @Test(priority = 20, description = "Verify that the Query Generated successfully")
     public void verifyQueryCreatedSuccessfully() throws InterruptedException{
+
+        String randomTitle = SupportDataGenerator.generateRandomTitle();
+        String randomDescription = SupportDataGenerator.generateRandomDescription();
+
+        test.info("Generated Title: " + randomTitle);
+        test.info("Generated Description: " + randomDescription);
+
         supportPage.clickOnTitle();
-        supportPage.enterTitle("Having a issue");
+        supportPage.enterTitle(randomTitle);
         supportPage.clickOnCategories();
         supportPage.selectCategoryValue_Support();
         supportPage.clickOnDescription();
-        supportPage.enterDescription("This description added related to Support, so can you please provide suggestion?");
+        supportPage.enterDescription(randomDescription);
         supportPage.clickOnQueryButton();
     }
 }

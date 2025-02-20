@@ -3,15 +3,22 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="com.tvs.pgm.threew.mobile.tests.SupportTest">
+      <class name="com.tvs.pgm.threew.mobile.tests.XReferralTest">
         <methods>
+          <include name="verifyCustomerNameFieldPresent"/>
+          <include name="verifyDropdown"/>
           <include name="tearDown"/>
-          <include name="setup"/>
+          <include name="verifyReferButton"/>
+          <include name="verifyBackArrowPresent"/>
           <include name="captureResult"/>
-          <include name="verifyErrorMessage_without_Category_Description"/>
+          <include name="verifyCustomerNumberFieldPresent"/>
+          <include name="verifyBackArrorWorks"/>
           <include name="startTest"/>
+          <include name="verifyGenericText"/>
+          <include name="setup"/>
+          <include name="verifyInfoTextPresent"/>
         </methods>
-      </class> <!-- com.tvs.pgm.threew.mobile.tests.SupportTest -->
+      </class> <!-- com.tvs.pgm.threew.mobile.tests.XReferralTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

@@ -51,17 +51,22 @@ public class ReferralPage extends BasePage{
 
     public String checkInfoText(){
         WebElement InfoText = wait.until(ExpectedConditions.visibilityOf(info));
-        return InfoText.getText();                
+        return InfoText.getAttribute("content-desc");             
+    }
+
+    public String checkTitle(){
+        WebElement InfoText = wait.until(ExpectedConditions.visibilityOf(pageTitle));
+        return pageTitle.getAttribute("content-desc");
     }
 
     public String checkGenericText(){    
         WebElement GenericText = wait.until(ExpectedConditions.visibilityOf(genericTextOfPage));
-        return GenericText.getText();       
+        return GenericText.getAttribute("content-desc");       
     }
 
     public String checkNameField(){    
         WebElement nameField = wait.until(ExpectedConditions.visibilityOf(customerName));
-        return nameField.getText();       
+        return nameField.getAttribute("content-desc");       
     }
 
     public String checkNumberField(){    
@@ -71,8 +76,18 @@ public class ReferralPage extends BasePage{
 
     public String checkProductField(){    
         WebElement productValues = wait.until(ExpectedConditions.visibilityOf(productDropdown));
-        return productValues.getText();       
+        return productValues.getAttribute("content-desc");       
     }
+
+    public String checkButtonValue(){    
+        WebElement ReferButtonText = wait.until(ExpectedConditions.visibilityOf(referNowButton));
+        return ReferButtonText.getAttribute("content-desc");       
+    }
+
+    // public String checkProductField(){    
+    //     WebElement productValues = wait.until(ExpectedConditions.visibilityOf(productDropdown));
+    //     return productValues.getAttribute("content-desc");       
+    // }
 
     public void clickOnBackArrow(){    
         backArrow.click();              
@@ -103,4 +118,9 @@ public class ReferralPage extends BasePage{
     public void enterCustomerNumber(String CustomerMobileNumber){
         customerName.sendKeys(CustomerMobileNumber);
     }
+
+    public void cickOnProductFromDropdown(){
+        productDropdown.click();
+    }
+
 }

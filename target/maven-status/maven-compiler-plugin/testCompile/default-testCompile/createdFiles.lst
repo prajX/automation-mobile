@@ -1,6 +1,6 @@
-com\tvs\pgm\threew\mobile\tests\P_HomeTest.class
-com\tvs\pgm\threew\mobile\tests\Q_SupportListingTest.class
 com\tvs\pgm\threew\mobile\tests\BaseTest.class
 com\tvs\pgm\threew\mobile\tests\LoginTest.class
+com\tvs\pgm\threew\mobile\tests\P_HomeTest.class
+com\tvs\pgm\threew\mobile\tests\Q_SupportListingTest.class
 com\tvs\pgm\threew\mobile\tests\SupportTest.class
 com\tvs\pgm\threew\mobile\tests\OTPTest.class

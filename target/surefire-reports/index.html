@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 8 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-passed">Surefire suite</span>
+              <span class="suite-name border-failed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,56 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">20 methods,   20 passed</span>
+                    <span class="method-stats">28 methods, 8 failed,   20 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tvs.pgm.threew.mobile.tests.XReferralTest" class="method navigator-link" hash-for-method="verifyBackArrorWorks">verifyBackArrorWorks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tvs.pgm.threew.mobile.tests.XReferralTest" class="method navigator-link" hash-for-method="verifyBackArrowPresent">verifyBackArrowPresent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tvs.pgm.threew.mobile.tests.XReferralTest" class="method navigator-link" hash-for-method="verifyCustomerNameFieldPresent">verifyCustomerNameFieldPresent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tvs.pgm.threew.mobile.tests.XReferralTest" class="method navigator-link" hash-for-method="verifyCustomerNumberFieldPresent">verifyCustomerNumberFieldPresent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tvs.pgm.threew.mobile.tests.XReferralTest" class="method navigator-link" hash-for-method="verifyDropdown">verifyDropdown</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tvs.pgm.threew.mobile.tests.XReferralTest" class="method navigator-link" hash-for-method="verifyGenericText">verifyGenericText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tvs.pgm.threew.mobile.tests.XReferralTest" class="method navigator-link" hash-for-method="verifyInfoTextPresent">verifyInfoTextPresent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.tvs.pgm.threew.mobile.tests.XReferralTest" class="method navigator-link" hash-for-method="verifyReferButton">verifyReferButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -213,6 +262,538 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.tvs.pgm.threew.mobile.tests.XReferralTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBackArrorWorks">
+                  </a> <!-- verifyBackArrorWorks -->
+                  <span class="method-name">verifyBackArrorWorks</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: //android.widget.ImageView[@content-desc=&quot;Refer a Customer&quot;]
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:64)
+	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:77)
+	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$DWAdXDj5.click(Unknown Source)
+	at com.tvs.pgm.threew.mobile.pages.HomePage.clickOnReferCustomer(HomePage.java:125)
+	at com.tvs.pgm.threew.mobile.tests.XReferralTest.verifyBackArrorWorks(XReferralTest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@5c4f4330 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:261)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
+	... 36 more
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [5e888ddc-fc7c-4729-89ad-b2d4a8edd80c, findElement {using=xpath, value=//android.widget.ImageView[@content-desc=&quot;Refer a Customer&quot;]}]
+Capabilities {appium:appActivity: com.tvs_pgm.tvs.MainActivity, appium:appPackage: com.tvs.tvs_pgm_dev, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.tvs_pgm.tvs.MainActivity, appPackage: com.tvs.tvs_pgm_dev, automationName: UIAutomator2, deviceName: 192.168.1.32:5555, dontStopAppOnReset: true, noReset: true, platformName: ANDROID}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Xiaomi, appium:deviceModel: M2003J15SC, appium:deviceName: 192.168.1.32:5555, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: 192.168.1.32:5555, appium:dontStopAppOnReset: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.75, appium:platformVersion: 12, appium:statBarHeight: 100, appium:takesScreenshot: true, appium:viewportRect: {height: 2240, left: 0, top: 100, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 5e888ddc-fc7c-4729-89ad-b2d4a8edd80c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	... 38 more
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify that the Back arrow is clickable)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBackArrowPresent">
+                  </a> <!-- verifyBackArrowPresent -->
+                  <span class="method-name">verifyBackArrowPresent</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: //android.widget.ImageView[@content-desc=&quot;Refer a Customer&quot;]
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:64)
+	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:77)
+	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$DWAdXDj5.click(Unknown Source)
+	at com.tvs.pgm.threew.mobile.pages.HomePage.clickOnReferCustomer(HomePage.java:125)
+	at com.tvs.pgm.threew.mobile.tests.XReferralTest.verifyBackArrowPresent(XReferralTest.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@221b77d7 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:261)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
+	... 36 more
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [5e888ddc-fc7c-4729-89ad-b2d4a8edd80c, findElement {using=xpath, value=//android.widget.ImageView[@content-desc=&quot;Refer a Customer&quot;]}]
+Capabilities {appium:appActivity: com.tvs_pgm.tvs.MainActivity, appium:appPackage: com.tvs.tvs_pgm_dev, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.tvs_pgm.tvs.MainActivity, appPackage: com.tvs.tvs_pgm_dev, automationName: UIAutomator2, deviceName: 192.168.1.32:5555, dontStopAppOnReset: true, noReset: true, platformName: ANDROID}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Xiaomi, appium:deviceModel: M2003J15SC, appium:deviceName: 192.168.1.32:5555, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: 192.168.1.32:5555, appium:dontStopAppOnReset: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.75, appium:platformVersion: 12, appium:statBarHeight: 100, appium:takesScreenshot: true, appium:viewportRect: {height: 2240, left: 0, top: 100, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 5e888ddc-fc7c-4729-89ad-b2d4a8edd80c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	... 38 more
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify that arrow button is present on the Referral screen)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCustomerNameFieldPresent">
+                  </a> <!-- verifyCustomerNameFieldPresent -->
+                  <span class="method-name">verifyCustomerNameFieldPresent</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.xpath: //android.widget.FrameLayout[@resource-id=&quot;android:id/content&quot;]/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.EditText[1] (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.tvs.pgm.threew.mobile.pages.ReferralPage.checkNameField(ReferralPage.java:68)
+	at com.tvs.pgm.threew.mobile.tests.XReferralTest.verifyCustomerNameFieldPresent(XReferralTest.java:56)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: //android.widget.FrameLayout[@resource-id=&quot;android:id/content&quot;]/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.EditText[1]
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:64)
+	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:77)
+	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$FLwd8Yly.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	... 33 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@194224ca (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:261)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
+	... 40 more
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [5e888ddc-fc7c-4729-89ad-b2d4a8edd80c, findElement {using=xpath, value=//android.widget.FrameLayout[@resource-id=&quot;android:id/content&quot;]/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.EditText[1]}]
+Capabilities {appium:appActivity: com.tvs_pgm.tvs.MainActivity, appium:appPackage: com.tvs.tvs_pgm_dev, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.tvs_pgm.tvs.MainActivity, appPackage: com.tvs.tvs_pgm_dev, automationName: UIAutomator2, deviceName: 192.168.1.32:5555, dontStopAppOnReset: true, noReset: true, platformName: ANDROID}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Xiaomi, appium:deviceModel: M2003J15SC, appium:deviceName: 192.168.1.32:5555, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: 192.168.1.32:5555, appium:dontStopAppOnReset: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.75, appium:platformVersion: 12, appium:statBarHeight: 100, appium:takesScreenshot: true, appium:viewportRect: {height: 2240, left: 0, top: 100, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 5e888ddc-fc7c-4729-89ad-b2d4a8edd80c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	... 42 more
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify that Customer Name field present on the Referral screen)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCustomerNumberFieldPresent">
+                  </a> <!-- verifyCustomerNumberFieldPresent -->
+                  <span class="method-name">verifyCustomerNumberFieldPresent</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.xpath: //android.widget.FrameLayout[@resource-id=&quot;android:id/content&quot;]/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.EditText[2] (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.tvs.pgm.threew.mobile.pages.ReferralPage.checkNumberField(ReferralPage.java:73)
+	at com.tvs.pgm.threew.mobile.tests.XReferralTest.verifyCustomerNumberFieldPresent(XReferralTest.java:61)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: //android.widget.FrameLayout[@resource-id=&quot;android:id/content&quot;]/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.EditText[2]
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:64)
+	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:77)
+	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$Vx2II5gc.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	... 33 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@2e85e3f1 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:261)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
+	... 40 more
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [5e888ddc-fc7c-4729-89ad-b2d4a8edd80c, findElement {using=xpath, value=//android.widget.FrameLayout[@resource-id=&quot;android:id/content&quot;]/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.EditText[2]}]
+Capabilities {appium:appActivity: com.tvs_pgm.tvs.MainActivity, appium:appPackage: com.tvs.tvs_pgm_dev, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.tvs_pgm.tvs.MainActivity, appPackage: com.tvs.tvs_pgm_dev, automationName: UIAutomator2, deviceName: 192.168.1.32:5555, dontStopAppOnReset: true, noReset: true, platformName: ANDROID}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Xiaomi, appium:deviceModel: M2003J15SC, appium:deviceName: 192.168.1.32:5555, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: 192.168.1.32:5555, appium:dontStopAppOnReset: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.75, appium:platformVersion: 12, appium:statBarHeight: 100, appium:takesScreenshot: true, appium:viewportRect: {height: 2240, left: 0, top: 100, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 5e888ddc-fc7c-4729-89ad-b2d4a8edd80c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	... 42 more
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify that Customer Number field present on the Referral screen)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDropdown">
+                  </a> <!-- verifyDropdown -->
+                  <span class="method-name">verifyDropdown</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.xpath: //android.widget.ImageView[@content-desc=&quot;Product Interested In*&quot;] (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.tvs.pgm.threew.mobile.pages.ReferralPage.checkProductField(ReferralPage.java:78)
+	at com.tvs.pgm.threew.mobile.tests.XReferralTest.verifyDropdown(XReferralTest.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: //android.widget.ImageView[@content-desc=&quot;Product Interested In*&quot;]
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:64)
+	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:77)
+	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$VCUrsAeu.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	... 33 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@39695803 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:261)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
+	... 40 more
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [5e888ddc-fc7c-4729-89ad-b2d4a8edd80c, findElement {using=xpath, value=//android.widget.ImageView[@content-desc=&quot;Product Interested In*&quot;]}]
+Capabilities {appium:appActivity: com.tvs_pgm.tvs.MainActivity, appium:appPackage: com.tvs.tvs_pgm_dev, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.tvs_pgm.tvs.MainActivity, appPackage: com.tvs.tvs_pgm_dev, automationName: UIAutomator2, deviceName: 192.168.1.32:5555, dontStopAppOnReset: true, noReset: true, platformName: ANDROID}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Xiaomi, appium:deviceModel: M2003J15SC, appium:deviceName: 192.168.1.32:5555, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: 192.168.1.32:5555, appium:dontStopAppOnReset: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.75, appium:platformVersion: 12, appium:statBarHeight: 100, appium:takesScreenshot: true, appium:viewportRect: {height: 2240, left: 0, top: 100, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 5e888ddc-fc7c-4729-89ad-b2d4a8edd80c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	... 42 more
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify that Products field present on the Referral screen)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyGenericText">
+                  </a> <!-- verifyGenericText -->
+                  <span class="method-name">verifyGenericText</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.xpath: //android.view.View[@content-desc=&quot;Invite your friends and family to explore our exclusive TVS products!&quot;] (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.tvs.pgm.threew.mobile.pages.ReferralPage.checkGenericText(ReferralPage.java:63)
+	at com.tvs.pgm.threew.mobile.tests.XReferralTest.verifyGenericText(XReferralTest.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: //android.view.View[@content-desc=&quot;Invite your friends and family to explore our exclusive TVS products!&quot;]
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:64)
+	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:77)
+	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$kfBPoAFm.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	... 33 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@5350ab17 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:261)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
+	... 40 more
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [5e888ddc-fc7c-4729-89ad-b2d4a8edd80c, findElement {using=xpath, value=//android.view.View[@content-desc=&quot;Invite your friends and family to explore our exclusive TVS products!&quot;]}]
+Capabilities {appium:appActivity: com.tvs_pgm.tvs.MainActivity, appium:appPackage: com.tvs.tvs_pgm_dev, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.tvs_pgm.tvs.MainActivity, appPackage: com.tvs.tvs_pgm_dev, automationName: UIAutomator2, deviceName: 192.168.1.32:5555, dontStopAppOnReset: true, noReset: true, platformName: ANDROID}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Xiaomi, appium:deviceModel: M2003J15SC, appium:deviceName: 192.168.1.32:5555, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: 192.168.1.32:5555, appium:dontStopAppOnReset: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.75, appium:platformVersion: 12, appium:statBarHeight: 100, appium:takesScreenshot: true, appium:viewportRect: {height: 2240, left: 0, top: 100, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 5e888ddc-fc7c-4729-89ad-b2d4a8edd80c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	... 42 more
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify that Generic text present on the Referral screen)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyInfoTextPresent">
+                  </a> <!-- verifyInfoTextPresent -->
+                  <span class="method-name">verifyInfoTextPresent</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.xpath: //android.view.View[@content-desc=&quot;Refer a Customer&quot;] (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.tvs.pgm.threew.mobile.pages.ReferralPage.checkInfoText(ReferralPage.java:53)
+	at com.tvs.pgm.threew.mobile.tests.XReferralTest.verifyInfoTextPresent(XReferralTest.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: //android.view.View[@content-desc=&quot;Refer a Customer&quot;]
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:64)
+	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:77)
+	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$8rbq3pI8.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	... 33 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@752973de (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:261)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
+	... 40 more
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [5e888ddc-fc7c-4729-89ad-b2d4a8edd80c, findElement {using=xpath, value=//android.view.View[@content-desc=&quot;Refer a Customer&quot;]}]
+Capabilities {appium:appActivity: com.tvs_pgm.tvs.MainActivity, appium:appPackage: com.tvs.tvs_pgm_dev, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.tvs_pgm.tvs.MainActivity, appPackage: com.tvs.tvs_pgm_dev, automationName: UIAutomator2, deviceName: 192.168.1.32:5555, dontStopAppOnReset: true, noReset: true, platformName: ANDROID}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Xiaomi, appium:deviceModel: M2003J15SC, appium:deviceName: 192.168.1.32:5555, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: 192.168.1.32:5555, appium:dontStopAppOnReset: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.75, appium:platformVersion: 12, appium:statBarHeight: 100, appium:takesScreenshot: true, appium:viewportRect: {height: 2240, left: 0, top: 100, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 5e888ddc-fc7c-4729-89ad-b2d4a8edd80c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	... 42 more
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify that Refer a customer text present on the Referral screen)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyReferButton">
+                  </a> <!-- verifyReferButton -->
+                  <span class="method-name">verifyReferButton</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.xpath: //android.widget.Button[@content-desc=&quot;Refer Now&quot;] (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.tvs.pgm.threew.mobile.pages.ReferralPage.checkButtonValue(ReferralPage.java:83)
+	at com.tvs.pgm.threew.mobile.tests.XReferralTest.verifyReferButton(XReferralTest.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: //android.widget.Button[@content-desc=&quot;Refer Now&quot;]
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:64)
+	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:77)
+	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$YHS0IcfI.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	... 33 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@e993715 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:261)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
+	... 40 more
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [5e888ddc-fc7c-4729-89ad-b2d4a8edd80c, findElement {using=xpath, value=//android.widget.Button[@content-desc=&quot;Refer Now&quot;]}]
+Capabilities {appium:appActivity: com.tvs_pgm.tvs.MainActivity, appium:appPackage: com.tvs.tvs_pgm_dev, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.tvs_pgm.tvs.MainActivity, appPackage: com.tvs.tvs_pgm_dev, automationName: UIAutomator2, deviceName: 192.168.1.32:5555, dontStopAppOnReset: true, noReset: true, platformName: ANDROID}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Xiaomi, appium:deviceModel: M2003J15SC, appium:deviceName: 192.168.1.32:5555, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: 192.168.1.32:5555, appium:dontStopAppOnReset: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.75, appium:platformVersion: 12, appium:statBarHeight: 100, appium:takesScreenshot: true, appium:viewportRect: {height: 2240, left: 0, top: 100, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 5e888ddc-fc7c-4729-89ad-b2d4a8edd80c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	... 42 more
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify tha the button text is correct - Refer Now)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tvs.pgm.threew.mobile.tests.OTPTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyOTPSubmitSuccess">
+                  </a> <!-- VerifyOTPSubmitSuccess -->
+                  <span class="method-name">VerifyOTPSubmitSuccess</span>
+                  <em>
+(Verify that the user can click on the submit button And successfully land on the HomePage)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyWithlessThanFiveDigit">
+                  </a> <!-- VerifyWithlessThanFiveDigit -->
+                  <span class="method-name">VerifyWithlessThanFiveDigit</span>
+                  <em>
+(Verify that the system can not move forward with less than 5 digit OTP)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyOTPEnteredSuccess">
+                  </a> <!-- verifyOTPEnteredSuccess -->
+                  <span class="method-name">verifyOTPEnteredSuccess</span>
+                  <em>
+(Verify that the user is able to move forward with correct OTP)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tvs.pgm.threew.mobile.tests.Q_SupportListingTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCreateQueryButtonClicksON_SupportListingScreen">
+                  </a> <!-- verifyCreateQueryButtonClicksON_SupportListingScreen -->
+                  <span class="method-name">verifyCreateQueryButtonClicksON_SupportListingScreen</span>
+                  <em>
+(Verify that the User can click on the Create query button in the Query listing screen)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -296,51 +877,43 @@
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.tvs.pgm.threew.mobile.tests.Q_SupportListingTest</span>
+              <span class="class-name">com.tvs.pgm.threew.mobile.tests.SupportTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyCreateQueryButtonClicksON_SupportListingScreen">
-                  </a> <!-- verifyCreateQueryButtonClicksON_SupportListingScreen -->
-                  <span class="method-name">verifyCreateQueryButtonClicksON_SupportListingScreen</span>
+                  <a name="verifyBackArrowVisibleOnSupportScreeen">
+                  </a> <!-- verifyBackArrowVisibleOnSupportScreeen -->
+                  <span class="method-name">verifyBackArrowVisibleOnSupportScreeen</span>
                   <em>
-(Verify that the User can click on the Create query button in the Query listing screen)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.tvs.pgm.threew.mobile.tests.OTPTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="VerifyOTPSubmitSuccess">
-                  </a> <!-- VerifyOTPSubmitSuccess -->
-                  <span class="method-name">VerifyOTPSubmitSuccess</span>
-                  <em>
-(Verify that the user can click on the submit button And successfully land on the HomePage)                  </em>
+(Verify that the Back arrow is present on the  Support screen)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="VerifyWithlessThanFiveDigit">
-                  </a> <!-- VerifyWithlessThanFiveDigit -->
-                  <span class="method-name">VerifyWithlessThanFiveDigit</span>
+                  <a name="verifyErrorMesage_Without_TitleAndDescritpion">
+                  </a> <!-- verifyErrorMesage_Without_TitleAndDescritpion -->
+                  <span class="method-name">verifyErrorMesage_Without_TitleAndDescritpion</span>
                   <em>
-(Verify that the system can not move forward with less than 5 digit OTP)                  </em>
+(Verify that the system is giving an error message if user is trying to create query without Title and Description)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyOTPEnteredSuccess">
-                  </a> <!-- verifyOTPEnteredSuccess -->
-                  <span class="method-name">verifyOTPEnteredSuccess</span>
+                  <a name="verifyErrorMessage_without_Category_Description">
+                  </a> <!-- verifyErrorMessage_without_Category_Description -->
+                  <span class="method-name">verifyErrorMessage_without_Category_Description</span>
                   <em>
-(Verify that the user is able to move forward with correct OTP)                  </em>
+(Verify that the system is giving an error message if user is trying to create query without category and Description)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyQueryCreatedSuccessfully">
+                  </a> <!-- verifyQueryCreatedSuccessfully -->
+                  <span class="method-name">verifyQueryCreatedSuccessfully</span>
+                  <em>
+(Verify that the Query Generated successfully)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -389,50 +962,6 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.tvs.pgm.threew.mobile.tests.SupportTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyBackArrowVisibleOnSupportScreeen">
-                  </a> <!-- verifyBackArrowVisibleOnSupportScreeen -->
-                  <span class="method-name">verifyBackArrowVisibleOnSupportScreeen</span>
-                  <em>
-(Verify that the Back arrow is present on the  Support screen)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyErrorMesage_Without_TitleAndDescritpion">
-                  </a> <!-- verifyErrorMesage_Without_TitleAndDescritpion -->
-                  <span class="method-name">verifyErrorMesage_Without_TitleAndDescritpion</span>
-                  <em>
-(Verify that the system is giving an error message if user is trying to create query without Title and Description)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyErrorMessage_without_Category_Description">
-                  </a> <!-- verifyErrorMessage_without_Category_Description -->
-                  <span class="method-name">verifyErrorMessage_without_Category_Description</span>
-                  <em>
-(Verify that the system is giving an error message if user is trying to create query without category and Description)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyQueryCreatedSuccessfully">
-                  </a> <!-- verifyQueryCreatedSuccessfully -->
-                  <span class="method-name">verifyQueryCreatedSuccessfully</span>
-                  <em>
-(Verify that the Query Generated successfully)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
         </div> <!-- panel Surefire_suite -->
         <div panel-name="test-xml-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -450,6 +979,7 @@
       &lt;class name=&quot;com.tvs.pgm.threew.mobile.tests.P_HomeTest&quot;/&gt;
       &lt;class name=&quot;com.tvs.pgm.threew.mobile.tests.Q_SupportListingTest&quot;/&gt;
       &lt;class name=&quot;com.tvs.pgm.threew.mobile.tests.SupportTest&quot;/&gt;
+      &lt;class name=&quot;com.tvs.pgm.threew.mobile.tests.XReferralTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
@@ -463,7 +993,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Surefire test (6 classes)</span>
+                <span class="test-name">Surefire test (7 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -489,92 +1019,124 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(20);
+data.addRows(28);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyQueryCreatedSuccessfully')
-data.setCell(0, 2, 'com.tvs.pgm.threew.mobile.tests.SupportTest')
-data.setCell(0, 3, 9906);
+data.setCell(0, 1, 'verifyInfoTextPresent')
+data.setCell(0, 2, 'com.tvs.pgm.threew.mobile.tests.XReferralTest')
+data.setCell(0, 3, 21468);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'VerifyWithlessThanFiveDigit')
-data.setCell(1, 2, 'com.tvs.pgm.threew.mobile.tests.OTPTest')
-data.setCell(1, 3, 4846);
+data.setCell(1, 1, 'verifyCustomerNameFieldPresent')
+data.setCell(1, 2, 'com.tvs.pgm.threew.mobile.tests.XReferralTest')
+data.setCell(1, 3, 20903);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyErrorMessage_without_Category_Description')
-data.setCell(2, 2, 'com.tvs.pgm.threew.mobile.tests.SupportTest')
-data.setCell(2, 3, 4137);
+data.setCell(2, 1, 'verifyDropdown')
+data.setCell(2, 2, 'com.tvs.pgm.threew.mobile.tests.XReferralTest')
+data.setCell(2, 3, 20784);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyHelpButtonClickable')
-data.setCell(3, 2, 'com.tvs.pgm.threew.mobile.tests.P_HomeTest')
-data.setCell(3, 3, 2979);
+data.setCell(3, 1, 'verifyCustomerNumberFieldPresent')
+data.setCell(3, 2, 'com.tvs.pgm.threew.mobile.tests.XReferralTest')
+data.setCell(3, 3, 20671);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyErrorMesage_Without_TitleAndDescritpion')
-data.setCell(4, 2, 'com.tvs.pgm.threew.mobile.tests.SupportTest')
-data.setCell(4, 3, 2476);
+data.setCell(4, 1, 'verifyGenericText')
+data.setCell(4, 2, 'com.tvs.pgm.threew.mobile.tests.XReferralTest')
+data.setCell(4, 3, 20421);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyOTPEnteredSuccess')
-data.setCell(5, 2, 'com.tvs.pgm.threew.mobile.tests.OTPTest')
-data.setCell(5, 3, 2318);
+data.setCell(5, 1, 'verifyReferButton')
+data.setCell(5, 2, 'com.tvs.pgm.threew.mobile.tests.XReferralTest')
+data.setCell(5, 3, 20302);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'VerifyOTPSubmitSuccess')
-data.setCell(6, 2, 'com.tvs.pgm.threew.mobile.tests.OTPTest')
-data.setCell(6, 3, 2303);
+data.setCell(6, 1, 'verifyQueryCreatedSuccessfully')
+data.setCell(6, 2, 'com.tvs.pgm.threew.mobile.tests.SupportTest')
+data.setCell(6, 3, 10951);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'wrongMobileNumber')
-data.setCell(7, 2, 'com.tvs.pgm.threew.mobile.tests.LoginTest')
-data.setCell(7, 3, 2249);
+data.setCell(7, 1, 'VerifyWithlessThanFiveDigit')
+data.setCell(7, 2, 'com.tvs.pgm.threew.mobile.tests.OTPTest')
+data.setCell(7, 3, 5757);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'enterMob')
-data.setCell(8, 2, 'com.tvs.pgm.threew.mobile.tests.LoginTest')
-data.setCell(8, 3, 1523);
+data.setCell(8, 1, 'verifyErrorMessage_without_Category_Description')
+data.setCell(8, 2, 'com.tvs.pgm.threew.mobile.tests.SupportTest')
+data.setCell(8, 3, 4438);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'clickVerifyNumberButton')
-data.setCell(9, 2, 'com.tvs.pgm.threew.mobile.tests.LoginTest')
-data.setCell(9, 3, 1214);
+data.setCell(9, 1, 'verifyHelpButtonClickable')
+data.setCell(9, 2, 'com.tvs.pgm.threew.mobile.tests.P_HomeTest')
+data.setCell(9, 3, 3244);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'profileIconePresent')
-data.setCell(10, 2, 'com.tvs.pgm.threew.mobile.tests.P_HomeTest')
-data.setCell(10, 3, 1156);
+data.setCell(10, 1, 'verifyOTPEnteredSuccess')
+data.setCell(10, 2, 'com.tvs.pgm.threew.mobile.tests.OTPTest')
+data.setCell(10, 3, 3098);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'verifyCreateQueryButtonClicksON_SupportListingScreen')
-data.setCell(11, 2, 'com.tvs.pgm.threew.mobile.tests.Q_SupportListingTest')
-data.setCell(11, 3, 800);
+data.setCell(11, 1, 'VerifyOTPSubmitSuccess')
+data.setCell(11, 2, 'com.tvs.pgm.threew.mobile.tests.OTPTest')
+data.setCell(11, 3, 2964);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'testTextField')
-data.setCell(12, 2, 'com.tvs.pgm.threew.mobile.tests.LoginTest')
-data.setCell(12, 3, 562);
+data.setCell(12, 1, 'verifyBackArrorWorks')
+data.setCell(12, 2, 'com.tvs.pgm.threew.mobile.tests.XReferralTest')
+data.setCell(12, 3, 2853);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'verifyReferralTileVisible')
-data.setCell(13, 2, 'com.tvs.pgm.threew.mobile.tests.P_HomeTest')
-data.setCell(13, 3, 390);
+data.setCell(13, 1, 'verifyErrorMesage_Without_TitleAndDescritpion')
+data.setCell(13, 2, 'com.tvs.pgm.threew.mobile.tests.SupportTest')
+data.setCell(13, 3, 2698);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'verifyBackArrowVisibleOnSupportScreeen')
-data.setCell(14, 2, 'com.tvs.pgm.threew.mobile.tests.SupportTest')
-data.setCell(14, 3, 339);
+data.setCell(14, 1, 'wrongMobileNumber')
+data.setCell(14, 2, 'com.tvs.pgm.threew.mobile.tests.LoginTest')
+data.setCell(14, 3, 2429);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'verifyTrainingTileVisible')
-data.setCell(15, 2, 'com.tvs.pgm.threew.mobile.tests.P_HomeTest')
-data.setCell(15, 3, 308);
+data.setCell(15, 1, 'verifyBackArrowPresent')
+data.setCell(15, 2, 'com.tvs.pgm.threew.mobile.tests.XReferralTest')
+data.setCell(15, 3, 1952);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'settingIconpresent')
-data.setCell(16, 2, 'com.tvs.pgm.threew.mobile.tests.P_HomeTest')
-data.setCell(16, 3, 307);
+data.setCell(16, 1, 'enterMob')
+data.setCell(16, 2, 'com.tvs.pgm.threew.mobile.tests.LoginTest')
+data.setCell(16, 3, 1779);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'verifyFindDealerTileVisible')
-data.setCell(17, 2, 'com.tvs.pgm.threew.mobile.tests.P_HomeTest')
-data.setCell(17, 3, 253);
+data.setCell(17, 1, 'clickVerifyNumberButton')
+data.setCell(17, 2, 'com.tvs.pgm.threew.mobile.tests.LoginTest')
+data.setCell(17, 3, 1453);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'verifyNeedAnyHelpTileVisible')
+data.setCell(18, 1, 'settingIconpresent')
 data.setCell(18, 2, 'com.tvs.pgm.threew.mobile.tests.P_HomeTest')
-data.setCell(18, 3, 204);
+data.setCell(18, 3, 1382);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'verifyVehicleServicesTileVisible')
-data.setCell(19, 2, 'com.tvs.pgm.threew.mobile.tests.P_HomeTest')
-data.setCell(19, 3, 203);
+data.setCell(19, 1, 'testTextField')
+data.setCell(19, 2, 'com.tvs.pgm.threew.mobile.tests.LoginTest')
+data.setCell(19, 3, 666);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'verifyBackArrowVisibleOnSupportScreeen')
+data.setCell(20, 2, 'com.tvs.pgm.threew.mobile.tests.SupportTest')
+data.setCell(20, 3, 527);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'profileIconePresent')
+data.setCell(21, 2, 'com.tvs.pgm.threew.mobile.tests.P_HomeTest')
+data.setCell(21, 3, 519);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'verifyTrainingTileVisible')
+data.setCell(22, 2, 'com.tvs.pgm.threew.mobile.tests.P_HomeTest')
+data.setCell(22, 3, 454);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'verifyNeedAnyHelpTileVisible')
+data.setCell(23, 2, 'com.tvs.pgm.threew.mobile.tests.P_HomeTest')
+data.setCell(23, 3, 408);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'verifyVehicleServicesTileVisible')
+data.setCell(24, 2, 'com.tvs.pgm.threew.mobile.tests.P_HomeTest')
+data.setCell(24, 3, 393);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'verifyReferralTileVisible')
+data.setCell(25, 2, 'com.tvs.pgm.threew.mobile.tests.P_HomeTest')
+data.setCell(25, 3, 384);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'verifyFindDealerTileVisible')
+data.setCell(26, 2, 'com.tvs.pgm.threew.mobile.tests.P_HomeTest')
+data.setCell(26, 3, 314);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'verifyCreateQueryButtonClicksON_SupportListingScreen')
+data.setCell(27, 2, 'com.tvs.pgm.threew.mobile.tests.Q_SupportListingTest')
+data.setCell(27, 3, 262);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 38 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -589,16 +1151,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">4 ignored methods</span>
+            <span class="header-content">5 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.tvs.pgm.threew.mobile.tests.P_HomeTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.tvs.pgm.threew.mobile.tests.OTPTest</span>
               <div class="ignored-methods-div">
@@ -607,7 +1162,14 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.tvs.pgm.threew.mobile.tests.LoginTest</span>
+              <span class="ignored-class-name">com.tvs.pgm.threew.mobile.tests.P_HomeTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.tvs.pgm.threew.mobile.tests.XReferralTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">tearDown</span>
                 <br/>
@@ -615,6 +1177,13 @@ return data;
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.tvs.pgm.threew.mobile.tests.SupportTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.tvs.pgm.threew.mobile.tests.LoginTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">tearDown</span>
                 <br/>
@@ -638,274 +1207,393 @@ return data;
               <div class="chronological-class-name">com.tvs.pgm.threew.mobile.tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">8369 ms</span>
+                <span class="method-start">11659 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.LoginTest.testTextField())</span>
-                <span class="method-start">9218 ms</span>
+                <span class="method-start">13041 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTextField</span>
-                <span class="method-start">9234 ms</span>
+                <span class="method-start">13056 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=testTextField status=SUCCESS method=LoginTest.testTextField()[pri:1, instance:com.t...)</span>
-                <span class="method-start">9812 ms</span>
+                <span class="method-start">13725 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.LoginTest.wrongMobileNumber())</span>
-                <span class="method-start">10549 ms</span>
+                <span class="method-start">14536 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">wrongMobileNumber</span>
-                <span class="method-start">10549 ms</span>
+                <span class="method-start">14537 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=wrongMobileNumber status=SUCCESS method=LoginTest.wrongMobileNumber()[pri:2, instan...)</span>
-                <span class="method-start">12798 ms</span>
+                <span class="method-start">16967 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.LoginTest.enterMob())</span>
-                <span class="method-start">13604 ms</span>
+                <span class="method-start">17847 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">enterMob</span>
-                <span class="method-start">13604 ms</span>
+                <span class="method-start">17847 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=enterMob status=SUCCESS method=LoginTest.enterMob()[pri:3, instance:com.tvs.pgm.thr...)</span>
-                <span class="method-start">15127 ms</span>
+                <span class="method-start">19626 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.LoginTest.clickVerifyNumberButton())</span>
-                <span class="method-start">15822 ms</span>
+                <span class="method-start">20808 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">clickVerifyNumberButton</span>
-                <span class="method-start">15823 ms</span>
+                <span class="method-start">20809 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=clickVerifyNumberButton status=SUCCESS method=LoginTest.clickVerifyNumberButton()[p...)</span>
-                <span class="method-start">17038 ms</span>
+                <span class="method-start">22263 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.tvs.pgm.threew.mobile.tests.OTPTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">17790 ms</span>
+                <span class="method-start">23203 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.OTPTest.VerifyWithlessThanFiveDigit())</span>
-                <span class="method-start">18036 ms</span>
+                <span class="method-start">23421 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VerifyWithlessThanFiveDigit</span>
-                <span class="method-start">18037 ms</span>
+                <span class="method-start">23421 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=VerifyWithlessThanFiveDigit status=SUCCESS method=OTPTest.VerifyWithlessThanFiveDig...)</span>
-                <span class="method-start">22883 ms</span>
+                <span class="method-start">29179 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">verifyOTPEnteredSuccess</span>
-                <span class="method-start">23579 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.OTPTest.verifyOTPEnteredSuccess())</span>
-                <span class="method-start">23579 ms</span>
+                <span class="method-start">30016 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyOTPEnteredSuccess</span>
+                <span class="method-start">30017 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=verifyOTPEnteredSuccess status=SUCCESS method=OTPTest.verifyOTPEnteredSuccess()[pri...)</span>
-                <span class="method-start">25897 ms</span>
+                <span class="method-start">33116 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.OTPTest.VerifyOTPSubmitSuccess())</span>
-                <span class="method-start">26569 ms</span>
+                <span class="method-start">33866 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VerifyOTPSubmitSuccess</span>
-                <span class="method-start">26569 ms</span>
+                <span class="method-start">33866 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=VerifyOTPSubmitSuccess status=SUCCESS method=OTPTest.VerifyOTPSubmitSuccess()[pri:7...)</span>
-                <span class="method-start">28874 ms</span>
+                <span class="method-start">36832 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.tvs.pgm.threew.mobile.tests.P_HomeTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">29751 ms</span>
+                <span class="method-start">37618 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.P_HomeTest.settingIconpresent())</span>
-                <span class="method-start">29958 ms</span>
+                <span class="method-start">38094 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">settingIconpresent</span>
-                <span class="method-start">29958 ms</span>
+                <span class="method-start">38095 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=settingIconpresent status=SUCCESS method=P_HomeTest.settingIconpresent()[pri:8, ins...)</span>
-                <span class="method-start">30265 ms</span>
+                <span class="method-start">39478 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.P_HomeTest.profileIconePresent())</span>
-                <span class="method-start">31041 ms</span>
+                <span class="method-start">40328 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">profileIconePresent</span>
-                <span class="method-start">31041 ms</span>
+                <span class="method-start">40329 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=profileIconePresent status=SUCCESS method=P_HomeTest.profileIconePresent()[pri:9, i...)</span>
-                <span class="method-start">32197 ms</span>
+                <span class="method-start">40849 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifyNeedAnyHelpTileVisible</span>
-                <span class="method-start">32998 ms</span>
+                <span class="method-start">41777 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.P_HomeTest.verifyNeedAnyHelpTileVisible())</span>
-                <span class="method-start">32998 ms</span>
+                <span class="method-start">41777 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=verifyNeedAnyHelpTileVisible status=SUCCESS method=P_HomeTest.verifyNeedAnyHelpTile...)</span>
-                <span class="method-start">33202 ms</span>
+                <span class="method-start">42186 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">verifyFindDealerTileVisible</span>
-                <span class="method-start">34031 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.P_HomeTest.verifyFindDealerTileVisible())</span>
-                <span class="method-start">34031 ms</span>
+                <span class="method-start">43087 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyFindDealerTileVisible</span>
+                <span class="method-start">43088 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=verifyFindDealerTileVisible status=SUCCESS method=P_HomeTest.verifyFindDealerTileVi...)</span>
-                <span class="method-start">34285 ms</span>
+                <span class="method-start">43402 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifyVehicleServicesTileVisible</span>
-                <span class="method-start">35145 ms</span>
+                <span class="method-start">44309 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.P_HomeTest.verifyVehicleServicesTileVisible())</span>
-                <span class="method-start">35145 ms</span>
+                <span class="method-start">44309 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=verifyVehicleServicesTileVisible status=SUCCESS method=P_HomeTest.verifyVehicleServ...)</span>
-                <span class="method-start">35348 ms</span>
+                <span class="method-start">44702 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifyTrainingTileVisible</span>
-                <span class="method-start">36159 ms</span>
+                <span class="method-start">45578 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.P_HomeTest.verifyTrainingTileVisible())</span>
-                <span class="method-start">36159 ms</span>
+                <span class="method-start">45578 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=verifyTrainingTileVisible status=SUCCESS method=P_HomeTest.verifyTrainingTileVisibl...)</span>
-                <span class="method-start">36468 ms</span>
+                <span class="method-start">46032 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifyReferralTileVisible</span>
-                <span class="method-start">37264 ms</span>
+                <span class="method-start">46908 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.P_HomeTest.verifyReferralTileVisible())</span>
-                <span class="method-start">37264 ms</span>
+                <span class="method-start">46908 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=verifyReferralTileVisible status=SUCCESS method=P_HomeTest.verifyReferralTileVisibl...)</span>
-                <span class="method-start">37670 ms</span>
+                <span class="method-start">47293 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">verifyHelpButtonClickable</span>
-                <span class="method-start">38547 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.P_HomeTest.verifyHelpButtonClickable() throws java.lang....)</span>
-                <span class="method-start">38547 ms</span>
+                <span class="method-start">48169 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyHelpButtonClickable</span>
+                <span class="method-start">48170 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=verifyHelpButtonClickable status=SUCCESS method=P_HomeTest.verifyHelpButtonClickabl...)</span>
-                <span class="method-start">41526 ms</span>
+                <span class="method-start">51416 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.tvs.pgm.threew.mobile.tests.Q_SupportListingTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">42263 ms</span>
+                <span class="method-start">52311 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifyCreateQueryButtonClicksON_SupportListingScreen</span>
-                <span class="method-start">42341 ms</span>
+                <span class="method-start">52431 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.tvs.pgm.threew.mobile.tests.SupportTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">43143 ms</span>
+                <span class="method-start">52694 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifyBackArrowVisibleOnSupportScreeen</span>
-                <span class="method-start">43583 ms</span>
+                <span class="method-start">53286 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.SupportTest.verifyBackArrowVisibleOnSupportScreeen())</span>
-                <span class="method-start">43583 ms</span>
+                <span class="method-start">53286 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=verifyBackArrowVisibleOnSupportScreeen status=SUCCESS method=SupportTest.verifyBack...)</span>
-                <span class="method-start">43923 ms</span>
+                <span class="method-start">53813 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">verifyErrorMesage_Without_TitleAndDescritpion</span>
-                <span class="method-start">44549 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.SupportTest.verifyErrorMesage_Without_TitleAndDescritpio...)</span>
-                <span class="method-start">44549 ms</span>
+                <span class="method-start">54611 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyErrorMesage_Without_TitleAndDescritpion</span>
+                <span class="method-start">54612 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=verifyErrorMesage_Without_TitleAndDescritpion status=SUCCESS method=SupportTest.ver...)</span>
-                <span class="method-start">47025 ms</span>
+                <span class="method-start">57312 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">verifyErrorMessage_without_Category_Description</span>
-                <span class="method-start">47781 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.SupportTest.verifyErrorMessage_without_Category_Descript...)</span>
-                <span class="method-start">47781 ms</span>
+                <span class="method-start">58147 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyErrorMessage_without_Category_Description</span>
+                <span class="method-start">58148 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=verifyErrorMessage_without_Category_Description status=SUCCESS method=SupportTest.v...)</span>
-                <span class="method-start">51918 ms</span>
+                <span class="method-start">62587 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.SupportTest.verifyQueryCreatedSuccessfully() throws java...)</span>
-                <span class="method-start">52611 ms</span>
+                <span class="method-start">63379 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyQueryCreatedSuccessfully</span>
-                <span class="method-start">52611 ms</span>
+                <span class="method-start">63380 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">captureResult([TestResult name=verifyQueryCreatedSuccessfully status=SUCCESS method=SupportTest.verifyQueryCreated...)</span>
-                <span class="method-start">62517 ms</span>
+                <span class="method-start">74332 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tvs.pgm.threew.mobile.tests.XReferralTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">75110 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.XReferralTest.verifyBackArrowPresent())</span>
+                <span class="method-start">75491 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyBackArrowPresent</span>
+                <span class="method-start">75492 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=verifyBackArrowPresent status=FAILURE method=XReferralTest.verifyBackArrowPresent()...)</span>
+                <span class="method-start">77458 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.XReferralTest.verifyBackArrorWorks())</span>
+                <span class="method-start">78274 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyBackArrorWorks</span>
+                <span class="method-start">78275 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=verifyBackArrorWorks status=FAILURE method=XReferralTest.verifyBackArrorWorks()[pri...)</span>
+                <span class="method-start">81130 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.XReferralTest.verifyInfoTextPresent())</span>
+                <span class="method-start">81892 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyInfoTextPresent</span>
+                <span class="method-start">81892 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=verifyInfoTextPresent status=FAILURE method=XReferralTest.verifyInfoTextPresent()[p...)</span>
+                <span class="method-start">103368 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.XReferralTest.verifyGenericText())</span>
+                <span class="method-start">104237 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyGenericText</span>
+                <span class="method-start">104238 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=verifyGenericText status=FAILURE method=XReferralTest.verifyGenericText()[pri:4, in...)</span>
+                <span class="method-start">124662 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.XReferralTest.verifyCustomerNameFieldPresent())</span>
+                <span class="method-start">125601 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyCustomerNameFieldPresent</span>
+                <span class="method-start">125602 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=verifyCustomerNameFieldPresent status=FAILURE method=XReferralTest.verifyCustomerNa...)</span>
+                <span class="method-start">146506 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.XReferralTest.verifyCustomerNumberFieldPresent())</span>
+                <span class="method-start">147370 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyCustomerNumberFieldPresent</span>
+                <span class="method-start">147370 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=verifyCustomerNumberFieldPresent status=FAILURE method=XReferralTest.verifyCustomer...)</span>
+                <span class="method-start">168043 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.XReferralTest.verifyDropdown())</span>
+                <span class="method-start">168863 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyDropdown</span>
+                <span class="method-start">168864 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=verifyDropdown status=FAILURE method=XReferralTest.verifyDropdown()[pri:7, instance...)</span>
+                <span class="method-start">189656 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyReferButton</span>
+                <span class="method-start">190523 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void com.tvs.pgm.threew.mobile.tests.XReferralTest.verifyReferButton())</span>
+                <span class="method-start">190523 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">captureResult([TestResult name=verifyReferButton status=FAILURE method=XReferralTest.verifyReferButton()[pri:8, in...)</span>
+                <span class="method-start">210827 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.tvs.pgm.threew.mobile.tests.BaseTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">63521 ms</span>
+                <span class="method-start">211967 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
