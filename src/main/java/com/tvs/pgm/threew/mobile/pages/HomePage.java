@@ -5,7 +5,13 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.PointerInput;
+
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.touch.WaitOptions;
+import io.appium.java_client.touch.offset.PointOption;
+import java.time.Duration;
+import java.util.Collections;
 
 public class HomePage extends BasePage {
 
@@ -32,6 +38,17 @@ public class HomePage extends BasePage {
 
     public HomePage() {        
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
+    }
+
+    public void scroll() {
+        swipe.addAction(finger.createPointerMove(Duration.ZERO, PointerInput.Origin.viewport(), 500, 1500));
+        swipe.addAction(finger.createPointerDown(PointerInput.MouseButton.LEFT.asArg()));
+        
+        // Move to (500, 500) over 1 second
+        swipe.addAction(finger.createPointerMove(Duration.ofMillis(1000), PointerInput.Origin.viewport(), 500, 500));
+        swipe.addAction(finger.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
+        
+        driver.perform(Collections.singletonList(swipe));
     }
 
     public boolean verifySettingPresent(){

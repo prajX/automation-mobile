@@ -27,7 +27,7 @@ public class XReferralTest extends BaseTest{
     // }
     
     
-    @Test(priority = 1, description = "Verify that arrow button is present on the Referral screen")
+    @Test(priority = 21, description = "Verify that arrow button is present on the Referral screen")
     public void verifyBackArrowPresent(){  
         System.out.println("-----------------------");
         homePage.clickOnReferCustomer();      

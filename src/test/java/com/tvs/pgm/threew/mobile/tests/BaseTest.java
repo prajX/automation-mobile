@@ -34,6 +34,7 @@ public class BaseTest {
         extent.setSystemInfo("Environment", "Dev");
         extent.setSystemInfo("OS", "Android");
         extent.setSystemInfo("Java Version", System.getProperty("java.version"));
+        
     }
 
     @BeforeMethod

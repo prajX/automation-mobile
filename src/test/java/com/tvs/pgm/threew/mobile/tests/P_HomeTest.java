@@ -49,6 +49,13 @@ public class P_HomeTest extends BaseTest{
         homePage.checkRefferalTile();
     }
 
+    @Test(priority = 15, description = "scroll up")
+    public void scrollup(){
+        System.out.println("--before scrolling--");
+        homePage.scrollUp();
+        System.out.println("--After scrolling--");
+    }
+
     @Test(priority = 15, dependsOnMethods = {"verifyNeedAnyHelpTileVisible"}, description = "Verify that the user can click on the Need Help tile is present on the screen")
     public void verifyHelpButtonClickable() throws InterruptedException{        
         homePage.clickonHelpTile();
