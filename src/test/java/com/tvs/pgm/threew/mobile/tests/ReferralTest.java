@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import com.tvs.pgm.threew.mobile.pages.HomePage;
 import com.tvs.pgm.threew.mobile.pages.ReferralPage;
 
-public class XReferralTest extends BaseTest{
+public class ReferralTest extends BaseTest{
     
 
     private ReferralPage referPage;
@@ -28,14 +28,16 @@ public class XReferralTest extends BaseTest{
     
     
     @Test(priority = 1, description = "Verify that arrow button is present on the Referral screen")
-    public void verifyBackArrowPresent(){  
-        System.out.println("-----------------------");
-        homePage.clickOnReferCustomer();      
+    public void verifyBackArrowPresent() throws InterruptedException{  
+        homePage.scrollUp();
+        // System.out.println("-----------------------");
+        // homePage.clickOnReferCustomer();     
+        // System.out.println("------------after click on tile"); 
         Assert.assertEquals(referPage.checkBackArrowPresent(), true);
     }
 
     @Test (priority = 2, description = "Verify that the Back arrow is clickable")
-    public void verifyBackArrorWorks(){
+    public void verifyBackArrorWorks() throws InterruptedException{
         referPage.clickOnBackArrow();
         Assert.assertEquals(homePage.verifySettingPresent(), true);
         homePage.clickOnReferCustomer();

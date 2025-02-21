@@ -1,5 +1,6 @@
 package com.tvs.pgm.threew.mobile.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -72,4 +73,14 @@ public class SupportListingPage extends BasePage {
     public void clickOnFilterIcon(){
         filterIcon.click();
     }
+
+    public WebElement getGeneratedQueryElement(String title, String description) {
+        String dynamicXPath = "//android.view.View[contains(@content-desc, 'Query / Request Title') " +
+                              "and contains(@content-desc, '" + title + "') " +
+                              "and contains(@content-desc, '" + description + "')]";
+    
+        return driver.findElement(By.xpath(dynamicXPath));
+    }
+    
+    
 }

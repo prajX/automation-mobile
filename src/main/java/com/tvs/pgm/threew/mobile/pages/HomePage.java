@@ -3,9 +3,21 @@ package com.tvs.pgm.threew.mobile.pages;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+
+import java.time.Duration;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
+
+import io.appium.java_client.TouchAction;
+import io.appium.java_client.android.AndroidTouchAction;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.touch.WaitOptions;
+import io.appium.java_client.touch.offset.PointOption;
 
 public class HomePage extends BasePage {
 
@@ -121,21 +133,22 @@ public class HomePage extends BasePage {
         trainingTroublshooting.click();
     }
 
-    public void clickOnReferCustomer(){
+    public void clickOnReferCustomer() throws InterruptedException{
+        System.out.println("------------scrolled------------");
         referCustomer.click();
     }
 
+    public void scrollUp() {
+//         Map<String, Object> scrollArgs = new HashMap<>();
+// scrollArgs.put("direction", "down"); // Change to "up" for scrolling up
+// driver.executeScript("flutter:scroll", scrollArgs);
 
-    // public void scrollToElement("Refer a Customer") 
-    // {
-    //     while (driver.findElements(MobileBy.AccessibilityId(referCustomer)).isEmpty()) {
-    //     new TouchAction<>(driver)
-    //         .press(PointOption.point(500, 1500))
-    //         .waitAction(WaitOptions.waitOptions(Duration.ofSeconds(1)))
-    //         .moveTo(PointOption.point(500, 500))
-    //         .release()
-    //         .perform();
-    // }
+Map<String, Object> scrollArgs = new HashMap<>();
+scrollArgs.put("direction", "up");  // Change to "up" if needed
+scrollArgs.put("by", "xpath"); // Use "elementId" or "xpath" if necessary
+scrollArgs.put("value", "//android.widget.ImageView[@content-desc=\"Refer a Customer\"]"); // Replace with actual key
+driver.executeScript("flutter:scrollUntilVisible", scrollArgs);
+}
 }
 
 

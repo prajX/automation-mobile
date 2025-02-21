@@ -1,6 +1,9 @@
 package com.tvs.pgm.threew.mobile.tests;
 
 import com.tvs.pgm.threew.mobile.base.DriverManager;
+
+import io.appium.java_client.AppiumDriver;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
@@ -22,6 +25,8 @@ public class BaseTest {
 
     protected static ExtentReports extent;
     protected static ExtentTest test;
+    protected static AppiumDriver driver;
+
 
     @BeforeSuite
     public void setup() throws MalformedURLException {
