@@ -14,7 +14,7 @@ public class DriverManager {
         if (driver == null) {
             UiAutomator2Options options=new UiAutomator2Options();
             options.setPlatformName("Android");
-            options.setDeviceName("9cc57a85");
+            options.setDeviceName("1a16b9720403");
             options.setAppPackage("com.tvs.tvs_pgm_dev");
             options.setAppActivity("com.tvs_pgm.tvs.MainActivity");
             options.setCapability("dontStopAppOnReset", true);

@@ -49,15 +49,7 @@ public class HomeTest extends BaseTest{
         homePage.checkRefferalTile();
     }
 
-    @Test(priority = 8, dependsOnMethods = {"verifyNeedAnyHelpTileVisible"}, description = "Verify that the user can click on the Need Help tile is present on the screen")
-    public void verifyHelpButtonClickable() throws InterruptedException{        
-        homePage.clickonHelpTile();
-        Thread.sleep(2000);
-    }
+    
 
-    // @Test(priority = 8)
-    // public void verifyRerralButtonClickable() throws InterruptedException{
-    //     homePage.clickOnReferCustomer();
-    // }
 
 }

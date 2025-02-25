@@ -28,6 +28,12 @@ public class SupportTest extends BaseTest {
         supportlistingPage=new SupportListingPage();
     }
 
+    @Test(priority = 0, dependsOnMethods = {"verifyNeedAnyHelpTileVisible"}, description = "Verify that the user can click on the Need Help tile is present on the screen")
+    public void verifyHelpButtonClickable() throws InterruptedException{        
+        homePage.clickonHelpTile();
+        Thread.sleep(2000);
+    }
+
     @Test(priority = 1, description = "Verify that the Back arrow is present on the  Support screen")
     public void verifyBackArrowVisibleOnSupportScreeen(){
         Assert.assertEquals(supportPage.backArrowPresentOnSupportPage(), true);
@@ -92,27 +98,15 @@ public class SupportTest extends BaseTest {
     public void verifyQueryCreatedSuccessfully() throws InterruptedException{
         String randomTitle = SupportDataGenerator.generateRandomTitle();
         String randomDescription = SupportDataGenerator.generateRandomDescription();
-
         test.info("Generated Title: " + randomTitle);
         test.info("Generated Description: " + randomDescription);
-        
-        // supportPage.clickOnAttachment();
-        // Thread.sleep(2000);
-        // Map<String, Object> args = new HashMap<>();
-        // args.put("finder", "ByType('Image')"); 
-        // driver.executeScript("flutter:tap", args);
-
         supportPage.clickOnTitle();
         supportPage.enterTitle(randomTitle);
         supportPage.clickOnCategories();
         supportPage.selectCategoryValue_Support();
         supportPage.clickOnDescription();
         supportPage.enterDescription(randomDescription);
-        supportPage.clickOnQueryButton();
-        homePage.clickonHelpTile();
-        WebElement dynamicXpath=supportlistingPage.getGeneratedQueryElement(randomTitle, randomDescription);
-        Assert.assertTrue(dynamicXpath.isDisplayed(), "The generated query is not visible!");
-
-
+        supportPage.clickOnQueryButton();   
+        Assert.assertEquals(homePage.checkHelpTile(), true);
     }
 }

@@ -1,3 +1,8 @@
 com\tvs\pgm\threew\mobile\tests\BaseTest.class
 com\tvs\pgm\threew\mobile\tests\LoginTest.class
+com\tvs\pgm\threew\mobile\tests\SupportListingTest.class
+com\tvs\pgm\threew\mobile\tests\HomeTest.class
+com\tvs\pgm\threew\mobile\tests\SupportTest.class
 com\tvs\pgm\threew\mobile\tests\OTPTest.class
+com\tvs\pgm\threew\mobile\tests\ReferralTest.class
+com\tvs\pgm\threew\mobile\tests\SettingsTest.class
