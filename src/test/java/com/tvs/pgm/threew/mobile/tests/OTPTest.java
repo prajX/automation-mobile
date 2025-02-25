@@ -17,7 +17,7 @@ public class OTPTest extends BaseTest{
     }
      
 
-    @Test(priority = 5, description = "Verify that the system can not move forward with less than 5 digit OTP")
+    @Test(priority = 1, description = "Verify that the system can not move forward with less than 5 digit OTP")
     public void VerifyWithlessThanFiveDigit(){
         otpPage.clickOnOTPBox();
         otpPage.enterOTP("52");  
@@ -26,13 +26,13 @@ public class OTPTest extends BaseTest{
     }
 
 
-    @Test(priority = 6, description="Verify that the user is able to move forward with correct OTP")
+    @Test(priority = 2, description="Verify that the user is able to move forward with correct OTP")
     public void verifyOTPEnteredSuccess(){
         otpPage.clickOnOTPBox();
         otpPage.enterOTP("54321");
     }
 
-    @Test(priority = 7, description="Verify that the user can click on the submit button And successfully land on the HomePage")
+    @Test(priority = 3, description="Verify that the user can click on the submit button And successfully land on the HomePage")
     public void VerifyOTPSubmitSuccess(){
         otpPage.clickSubmitButton();
     }

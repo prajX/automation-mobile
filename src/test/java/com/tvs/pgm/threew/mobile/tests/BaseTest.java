@@ -1,6 +1,9 @@
 package com.tvs.pgm.threew.mobile.tests;
 
 import com.tvs.pgm.threew.mobile.base.DriverManager;
+
+import io.appium.java_client.AppiumDriver;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
@@ -22,6 +25,8 @@ public class BaseTest {
 
     protected static ExtentReports extent;
     protected static ExtentTest test;
+    protected static AppiumDriver driver;
+
 
     @BeforeSuite
     public void setup() throws MalformedURLException {
@@ -32,7 +37,7 @@ public class BaseTest {
         extent.setSystemInfo("Tester", "Mayur Martiwar"); // Change Tester Name
         extent.setSystemInfo("Project", "Mobile App Testing - 3Wheeler");
         extent.setSystemInfo("Environment", "Dev");
-        extent.setSystemInfo("OS", System.getProperty("os.name"));
+        extent.setSystemInfo("OS", "Android");
         extent.setSystemInfo("Java Version", System.getProperty("java.version"));
     }
 
@@ -40,7 +45,7 @@ public class BaseTest {
     public void startTest(Method method) {
         Test testAnnotation = method.getAnnotation(Test.class);
         String testCaseName = (testAnnotation != null && !testAnnotation.description().isEmpty())? testAnnotation.description():
-        method.getName(); // Fallback to method name
+        method.getName(); 
 
         test = extent.createTest(testCaseName); // Set test name in report
     }
@@ -55,7 +60,7 @@ public class BaseTest {
             test.skip("Test Skipped");
         }
 
-        String screenshotPath = "D:\\Automation\\Mobile\\TVSThreeW\\automation-mobile\\src\\test\\resources\\screenshots\\" + result.getName() + ".jpeg";
+        String screenshotPath = "C:\\Users\\admin\\Desktop\\3wautomation\\automation-mobile\\src\\test\\resources\\screenshots\\" + result.getName() + ".jpeg";
 
     // Take Screenshot
     File screenshot = ((TakesScreenshot) DriverManager.getDriver()).getScreenshotAs(OutputType.FILE);

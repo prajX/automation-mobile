@@ -1,17 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Surefire suite]" verbose="0">
-  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+<suite name="Failed suite [MyTestSuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Sanity_Tests(failed)" verbose="0">
     <classes>
       <class name="com.tvs.pgm.threew.mobile.tests.SupportTest">
         <methods>
+          <include name="verifyErrorMesage_Without_TitleAndDescritpion"/>
           <include name="tearDown"/>
           <include name="setup"/>
+          <include name="verifyBackArrowVisibleOnSupportScreeen"/>
           <include name="captureResult"/>
-          <include name="verifyErrorMessage_without_Category_Description"/>
           <include name="startTest"/>
         </methods>
       </class> <!-- com.tvs.pgm.threew.mobile.tests.SupportTest -->
+      <class name="com.tvs.pgm.threew.mobile.tests.SettingsTest">
+        <methods>
+          <include name="checkPasscodeSectionPresent"/>
+          <include name="tearDown"/>
+          <include name="checkDeleteAccountSection"/>
+          <include name="checkChangeLanguageSection"/>
+          <include name="captureResult"/>
+          <include name="m_checkChangePasscodeOption"/>
+          <include name="startTest"/>
+          <include name="checkSecuritySection"/>
+          <include name="landOnPasscodeSettingScreen"/>
+          <include name="checkPrivacyAndTermsSection"/>
+          <include name="checkSelectLanguageSection"/>
+          <include name="checkPasscodeSection"/>
+          <include name="DeclineButtonshown"/>
+          <include name="clickOnTerms"/>
+          <include name="checkFingerPrintSection"/>
+          <include name="verifyTerms"/>
+          <include name="checkTermsSection"/>
+          <include name="landsOnPassSetupScreen"/>
+          <include name="checkPrivacySection"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.tvs.pgm.threew.mobile.tests.SettingsTest -->
+      <class name="com.tvs.pgm.threew.mobile.tests.SupportListingTest">
+        <methods>
+          <include name="setup"/>
+          <include name="verifyCreateQueryButtonClicksON_SupportListingScreen"/>
+        </methods>
+      </class> <!-- com.tvs.pgm.threew.mobile.tests.SupportListingTest -->
     </classes>
-  </test> <!-- Surefire test(failed) -->
-</suite> <!-- Failed suite [Surefire suite] -->
+  </test> <!-- Sanity_Tests(failed) -->
+</suite> <!-- Failed suite [MyTestSuite] -->

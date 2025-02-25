@@ -3,9 +3,23 @@ package com.tvs.pgm.threew.mobile.pages;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+
+import java.time.Duration;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.PointerInput;
+
+import io.appium.java_client.TouchAction;
+import io.appium.java_client.android.AndroidTouchAction;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.touch.WaitOptions;
+import io.appium.java_client.touch.offset.PointOption;
 
 public class HomePage extends BasePage {
 
@@ -48,11 +62,13 @@ public class HomePage extends BasePage {
 
 
     public void clickOnSetting(){
-        settingIcon.click();
+        WebElement element = wait.until(ExpectedConditions.visibilityOf(settingIcon));
+        element.click();
     }
 
     public void clickOnProfie(){
-        profileIcon.click();
+        WebElement element = wait.until(ExpectedConditions.visibilityOf(profileIcon));
+        element.click();
     }
 
     public boolean checkHelpTile(){
@@ -63,6 +79,7 @@ public class HomePage extends BasePage {
             System.out.println("Need Any Help tile did not appear in time!");
             return false;
         }   
+
     }
 
     public boolean checkRefferalTile(){
@@ -121,21 +138,33 @@ public class HomePage extends BasePage {
         trainingTroublshooting.click();
     }
 
-    public void clickOnReferCustomer(){
+    public void clickOnReferCustomer() throws InterruptedException{
+        Thread.sleep(1000);
         referCustomer.click();
     }
 
+    public void scrollUp() {
+        swipe.addAction(finger.createPointerMove(Duration.ZERO, PointerInput.Origin.viewport(), 500, 1500));
+        swipe.addAction(finger.createPointerDown(PointerInput.MouseButton.LEFT.asArg()));
+        
+        // Move to (500, 500) over 1 second
+        swipe.addAction(finger.createPointerMove(Duration.ofMillis(1000), PointerInput.Origin.viewport(), 500, 500));
+        swipe.addAction(finger.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
+        
+        driver.perform(Collections.singletonList(swipe));
+    }
+    public void scrollDown() {
+        swipe.addAction(finger.createPointerMove(Duration.ZERO, PointerInput.Origin.viewport(), 500, 500));
+        swipe.addAction(finger.createPointerDown(PointerInput.MouseButton.LEFT.asArg()));
+        
+        // Move to (500, 500) over 1 second
+        swipe.addAction(finger.createPointerMove(Duration.ofMillis(1000), PointerInput.Origin.viewport(), 500, 1500));
+        swipe.addAction(finger.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
+        
+        driver.perform(Collections.singletonList(swipe));
+    }
 
-    // public void scrollToElement("Refer a Customer") 
-    // {
-    //     while (driver.findElements(MobileBy.AccessibilityId(referCustomer)).isEmpty()) {
-    //     new TouchAction<>(driver)
-    //         .press(PointOption.point(500, 1500))
-    //         .waitAction(WaitOptions.waitOptions(Duration.ofSeconds(1)))
-    //         .moveTo(PointOption.point(500, 500))
-    //         .release()
-    //         .perform();
-    // }
+    
 }
 
 

@@ -1,9 +1,17 @@
-<suite name="MySuite">
-    <test name="MyTest">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MyTestSuite">
+    <test name="Sanity_Tests">
         <classes>
-            <class name="com.tvs.pgm.threew.mobile.tests.LoginTest" />
-            <class name="com.tvs.pgm.threew.mobile.tests.OTPTest" />
-            <class name="com.tvs.pgm.threew.mobile.tests.HomeTest" />
+            <class name="com.tvs.pgm.threew.mobile.tests.BaseTest"/>
+            <class name="com.tvs.pgm.threew.mobile.tests.LoginTest"/>     
+            <class name="com.tvs.pgm.threew.mobile.tests.LoginTest"/>  
+            <class name="com.tvs.pgm.threew.mobile.tests.OTPTest"/>   
+            <class name="com.tvs.pgm.threew.mobile.tests.HomeTest"/> 
+            <class name="com.tvs.pgm.threew.mobile.tests.SupportListingTest"/> 
+            <class name="com.tvs.pgm.threew.mobile.tests.SupportTest"/>
+            <!-- <class name="com.tvs.pgm.threew.mobile.tests.ReferralTest"/> -->
+            <class name="com.tvs.pgm.threew.mobile.tests.SettingsTest"/>
+
         </classes>
     </test>
 </suite>
